@@ -1,85 +1,185 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>APEX Race Control · Slot car timing for home and club</title>
-<meta name="description" content="APEX Race Control: accurate slot car lap timing and race management for home racers and clubs. Coming February 2027.">
-<link rel="icon" href="img/favicon.png"><link rel="stylesheet" href="style.css"></head>
+<meta name="description" content="APEX Race Control: accurate slot car lap timing and race management for home racers and clubs.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header class="nav"><a class="brand" href="#"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
-<nav><a href="#what">What it is</a><a href="#editions">Home &amp; Club</a><a href="#features">Features</a><a href="#cars">Cars</a><a href="#contact">Contact</a></nav></header>
+<header class="nav">
+  <a class="brand" href="/"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
+  <nav>
+    <a href="#timing">Timing</a>
+    <a href="#screens">Screens</a>
+    <a href="#autopilot">Auto Pilot</a>
+    <a href="#wizard">Wizards</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <section class="hero">
- <img class="hero-img" src="img/splash.jpg" alt="APEX Race Control: Precision Timing. Intelligent Control." width="1920" height="1080">
- <p class="kicker">Coming</p>
- <h1 class="date"><span class="m">February</span> <span class="y">2027</span></h1>
- <p class="lead">Slot car timing and race control for the garage track and the club hall. Club testing runs from mid-December 2026.</p>
- <a class="btn" href="mailto:info@apexslotcarsystems.co.za?subject=Keep%20me%20posted%20on%20APEX">Keep me posted</a>
- <p style="font-size:13px;color:#7d8996;max-width:640px;margin:12px auto 0;">By clicking “Keep me posted” your email will only be used to notify you of APEX Race Control product launches and related updates. We will not sell or share it.</p>
+  <img class="hero-img" src="img/splash.jpg" alt="APEX Race Control" onerror="this.style.display='none'">
+  <p class="kicker">Coming</p>
+  <h1 class="date"><span class="m">February</span> <span class="y">2027</span></h1>
+  <p class="lead">Slot car timing and race control for the garage track and the club hall. Club testing runs from mid-December 2026.</p>
+  <a class="btn" href="mailto:info@apexslotcarsystems.co.za?subject=Keep%20me%20posted%20on%20APEX">Keep me posted</a>
+  <p style="font-size:13px;color:#7d8996;max-width:640px;margin:12px auto 0;">By clicking “Keep me posted” your email will only be used to notify you of APEX Race Control product launches and related updates. We will not sell or share it.</p>
 </section>
 
-<section id="what" class="wrap">
- <h2>What APEX is</h2>
- <div class="grid3">
-  <div class="card"><h3>Accurate timing</h3><p>Every lap is timed on a steady clock, unaffected by midnight, daylight saving or internet time corrections. Part laps are worked out from the timing, and laps that are too fast to be real don't count.</p></div>
-  <div class="card"><h3>Runs on what you have</h3><p>One app for a Raspberry Pi, a Windows PC or a Mac. Home even runs on a Raspberry Pi 3B+. Plug in the lap counter and a TV and you're racing.</p></div>
-  <div class="card"><h3>Racing out of the box</h3><p>A starter pack of car classes, cars and race settings ships with it. Tap <b>Quick race</b>, add the drivers, and the first race is on in two minutes.</p></div>
-  <div class="card"><h3>Works with your lap counter</h3><p>Use the APEX lap counter, a Trackmate timing interface, or an Arduino running Race Coordinator's Arduino program. An Arduino with that program works with APEX as it is: pick it under Setup and enter its pins.</p></div>
- </div>
+<section id="timing" class="wrap">
+  <h2>Timing you can trust</h2>
+  <div class="grid3">
+    <div class="card">
+      <h3>Clock correction</h3>
+      <p>Every lap is corrected against the computer’s accurate clock. A typical Arduino lap counter can drift 30 ms on a 6-second lap. APEX brings that down to 0.01 ms per lap with any supported counter, and 0.005 ms with the APEX lap counter (hardware interrupt timestamps). Trackmate and Race Coordinator hardware get the same correction.</p>
+    </div>
+    <div class="card">
+      <h3>Part-lap learning</h3>
+      <p>APEX learns the track. Partial laps are calculated from the timing data so positions stay fair even when a car is mid-lap when the heat ends or a track call happens. Packs are timed exactly — cars crossing together are timed as precisely as a single car, even with bouncing contacts.</p>
+    </div>
+    <div class="card">
+      <h3>Nothing lost</h3>
+      <p>Every lap is saved the moment it happens. A power cut or restart loses nothing. The lap counter times every lap itself and each lap is written immediately.</p>
+    </div>
+  </div>
 </section>
 
-<section id="editions" class="wrap">
- <h2>Home and Club</h2>
- <table class="cmp">
-  <thead><tr><th></th><th>Home</th><th>Club</th></tr></thead>
-  <tbody>
-  <tr><td>Who it's for</td><td>Racing at home with friends</td><td>Club nights, championships and open events</td></tr>
-  <tr><td>Race types</td><td>Club race, Championship</td><td>Club race, Championship, Event, Multi-day event</td></tr>
-  <tr><td>Lanes</td><td>2 (4 with the 3 and 4 lanes add-on)</td><td>2 to 8</td></tr>
-  <tr><td>Check-in</td><td>By hand</td><td>By hand, by phone (QR) or both</td></tr>
-  <tr><td>Practice</td><td>Open practice</td><td>Open and timed practice</td></tr>
-  <tr><td>Marshals</td><td>No</td><td>Marshal duty, penalties and official warnings</td></tr>
-  <tr><td>Race screens</td><td>One</td><td>Two included, up to six with the add-on</td></tr>
-  <tr><td>Auto Pilot</td><td>Yes</td><td>Yes</td></tr>
-  <tr><td>Car catalogue</td><td>Starter pack</td><td>Starter pack plus the full catalogue import</td></tr>
-  <tr><td>Runs on</td><td>Raspberry Pi 3B+, 4, 5, PC, Mac</td><td>Raspberry Pi 4, 5, PC, Mac</td></tr>
-  </tbody></table>
+<section id="screens" class="wrap">
+  <h2>See it in action</h2>
+  <div class="grid3">
+    <div class="card">
+      <img src="img/home-wizard.jpg" alt="Wizard" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Wizard-driven setup</h3>
+      <p>Every setup is a few short steps with selection tiles. Next stays off until the step is complete and nothing starts blank. Quick race, championship, endurance or event — you are racing in minutes.</p>
+    </div>
+    <div class="card">
+      <img src="img/home-quick.jpg" alt="Race control" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Race Control</h3>
+      <p>The heat clock, running order with lap corrections, heat strip and big Track call button. Works on laptop, tablet or phone. One interruption cuts lane power and stops the clock; restart is controlled when the checks pass.</p>
+    </div>
+    <div class="card">
+      <img src="img/home-results.jpg" alt="Results" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Results on every phone</h3>
+      <p>Scan the QR on the race screen. Your personal report with graphs and class rules appears instantly. No app, no login. Race story shows where every driver stood after each heat.</p>
+    </div>
+    <div class="card">
+      <img src="img/championship-standings.jpg" alt="Championship" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Championships</h3>
+      <p>Seasons with dropped rounds and seeding. One-day events with imported drivers. Multi-day meetings with carry-over to the finals. Clear standings and per-driver reports.</p>
+    </div>
+    <div class="card">
+      <img src="img/home-practice.jpg" alt="Practice" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Open practice</h3>
+      <p>Each lane’s laps and best lap on the screen. Timed practice with a results pause in Club. Drivers can check in and warm up before the first heat.</p>
+    </div>
+    <div class="card">
+      <img src="img/home-review.jpg" alt="Review" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Heat review</h3>
+      <p>After every heat the results are clear. Late drivers can join between heats. A driver out leaves an empty lane. Suspend is available when it is safe.</p>
+    </div>
+    <div class="card">
+      <img src="img/hardware.jpg" alt="Hardware" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Your hardware</h3>
+      <p>Works with the APEX lap counter, Trackmate, or an Arduino running Race Coordinator’s program. Same clock correction on all of them. Start lights and track power included.</p>
+    </div>
+    <div class="card">
+      <img src="img/marshalling.jpg" alt="Marshalling" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Marshalling</h3>
+      <p>Marshals for every heat, shared out evenly, with a penalty for a missed duty. Keeps the night fair and organised.</p>
+    </div>
+    <div class="card">
+      <img src="img/cars.jpg" alt="Cars" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Cars and classes</h3>
+      <p>Hundreds of cars from the main makes, sorted into classes, in 1:32, 1:24 and 1:43. Home ships with the starter pack; Club can import the full catalogue.</p>
+    </div>
+    <div class="card">
+      <img src="img/drivers.jpg" alt="Drivers" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Drivers and categories</h3>
+      <p>Driver categories for class, rank and age, each with its own results. Import from Excel or from Race Coordinator / TrackMate.</p>
+    </div>
+    <div class="card">
+      <img src="img/calendar.jpg" alt="Calendar" style="width:100%;border-radius:8px;margin-bottom:10px">
+      <h3>Club calendar</h3>
+      <p>Repeating club meetings and one-off events. The calendar keeps the season organised so everyone knows when the next race is.</p>
+    </div>
+  </div>
 </section>
 
-<section id="features" class="wrap">
- <h2>Key features</h2>
- <div class="grid3">
-  <div class="card"><h3>Foolproof wizards</h3><p>Every setup is a few short steps with selection tiles. Next stays off until a step is complete, and nothing starts blank.</p></div>
-  <div class="card"><h3>Fair heats</h3><p>Rotations put every driver on every lane. Late drivers and early leavers are handled for you, and heats already run never change.</p></div>
-  <div class="card"><h3>Auto Pilot</h3><p>The breaks between heats run themselves, so the organiser can race too. A click of yours always wins.</p></div>
-  <div class="card"><h3>Live race screens</h3><p>Block or List layout on the TV, live order, heat results between heats, and in Club a second screen with its own cards.</p></div>
-  <div class="card"><h3>Championships and events</h3><p>Seasons with dropped rounds and seeding, one-day events with imported drivers, and multi-day meetings with carry-over to the finals.</p></div>
-  <div class="card"><h3>Results and peace of mind</h3><p>PDF reports and Excel exports, results by driver class, and encrypted backups before every big change.</p></div>
- </div>
-</section>
-
-<section id="cars" class="wrap band">
- <h2>Hundreds of cars, ready to race</h2>
- <p>APEX knows the cars you race: hundreds of cars from the main makes, sorted into car classes, in <b>1:32</b>, <b>1:24</b> and <b>1:43</b>.</p>
- <p class="makes"><b>1:32:</b> Scalextric, Carrera, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar and more. <b>1:24:</b> Betta, JK Products, Red Fox and others, including approved bodyshells. <b>1:43:</b> Carrera GO!!!.</p>
- <p class="makes">For example: Scalextric Aston Martin DBR1, Slot.it Chaparral 2F, NSR Ford GT40 Mk II, Sideways Porsche 911 RSR, Carrera Chevrolet Corvette C8.</p>
- <p class="makes">Home ships with the 1:32 starter pack; Club can import the full catalogue.</p>
+<section id="autopilot" class="wrap">
+  <h2>Auto Pilot — Race Director and Broadcast Director</h2>
+  <div class="grid3">
+    <div class="card">
+      <h3>Race Director</h3>
+      <p>The breaks between heats run themselves so the organiser can race too. A click of yours always wins. Handles late joins, early leavers and the normal flow of a club night. Your input always overrides.</p>
+    </div>
+    <div class="card">
+      <h3>Broadcast Director</h3>
+      <p>Overlays and screens advance with the race on their own. The broadcast director can still take control at any moment. Perfect when you are streaming and racing at the same time. Changes reach the stream live.</p>
+    </div>
+    <div class="card">
+      <h3>Car test in a race</h3>
+      <p>During a Track call you can power one lane to try a car without disrupting the running order or the results. The rest of the field stays exactly where it was. Return cars to their markers and continue.</p>
+    </div>
+  </div>
 </section>
 
 <section class="wrap">
- <h2>Coming later</h2>
- <ul class="later">
-  <li><b>Precision timing</b>: a high-accuracy timing add-on.</li>
-  <li><b>Enduro</b>: endurance racing with stints and pit windows.</li>
-  <li><b>Fuel racing</b>: a free upgrade with a virtual fuel tank.</li>
-  <li><b>SD card health check</b>: a free check of the system's card.</li>
-  <li><b>Community car catalogue</b>: suggest a car and keep the catalogue growing.</li>
- </ul>
+  <h2>Race screens and builders</h2>
+  <div class="grid3">
+    <div class="card">
+      <h3>Live race screens</h3>
+      <p>Block or List layouts on the TV. Live order, heat results between heats, and in Club a second screen with its own cards. Preset layouts include Tower and clock, Tower full, Race centre and Enduro tower plus strip. Any number of browsers can show the race screen at the same time.</p>
+    </div>
+    <div class="card">
+      <h3>Screen builder</h3>
+      <p>Build your own layouts. Drag, resize and arrange cards the way your club wants them. Screen Studio lets you run up to six live screens anywhere on the network that advance with the race by themselves.</p>
+    </div>
+    <div class="card">
+      <h3>Overlay builder</h3>
+      <p>Create custom stream overlays for OBS, Streamlabs, vMix and others. Live tower, stint results, race results and broadcast widgets. Corner, offset, size and opacity are set inside APEX. Broadcast Studio adds a separate director login and auto-progress.</p>
+    </div>
+  </div>
+</section>
+
+<section id="wizard" class="wrap">
+  <h2>Wizard-driven everything</h2>
+  <div class="card">
+    <p>Every setup is a few short steps with selection tiles. Next stays off until the step is complete, and nothing starts blank. Quick race, championship, endurance, event — the wizard keeps it simple and consistent so you are racing in minutes, not fighting menus. The same pattern is used for drivers, cars, classes and race formats.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Works on every phone and tablet</h2>
+  <div class="grid3">
+    <div class="card"><h3>Results on your phone</h3><p>Scan a QR code. Your personal report with graphs and class rules. No app, no login, no account.</p></div>
+    <div class="card"><h3>Phone check-in</h3><p>Drivers scan the race screen QR, pick their name, class and car, and are ready. Club nights stay smooth even with late arrivals.</p></div>
+    <div class="card"><h3>Race screens anywhere</h3><p>The same live race screen runs on a TV, a laptop, a tablet or a phone. One layout for the club hall, another in your pocket.</p></div>
+    <div class="card"><h3>Voice call-outs</h3><p>Clear voice announcements of who’s next and key race events — never a driver’s name. Offline, male or female voice.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>More that just works</h2>
+  <div class="grid3">
+    <div class="card"><h3>Fair heats</h3><p>Rotations put every driver on every lane. Late drivers and early leavers are handled for you, and heats already run never change.</p></div>
+    <div class="card"><h3>Your hardware</h3><p>Works with the APEX lap counter, Trackmate, or an Arduino running Race Coordinator’s program. Same clock correction on all of them.</p></div>
+    <div class="card"><h3>Import history</h3><p>Moving from Race Coordinator or TrackMate? Import your database or exports — drivers, races, results, rotations and the rest.</p></div>
+  </div>
+  <p style="margin-top:24px;text-align:center"><a class="btn" href="pricing.html">See pricing</a></p>
 </section>
 
 <section id="contact" class="wrap">
- <h2>Contact</h2>
- <p>Questions, club enquiries or want to be told the day we launch? Email us at <a href="mailto:info@apexslotcarsystems.co.za?subject=APEX%20Race%20Control">info@apexslotcarsystems.co.za</a>.</p>
- <p style="font-size:13px;color:#7d8996;">Email addresses collected via “Keep me posted” are used solely to inform you of product launches and updates. They are not sold or shared.</p>
+  <h2>Contact</h2>
+  <p>Questions or club enquiries? Email <a href="mailto:info@apexslotcarsystems.co.za">info@apexslotcarsystems.co.za</a>.</p>
 </section>
 
-<footer><img src="img/logo.png" alt="" width="28" height="28"> APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br><small>Trackmate, Race Coordinator, Scalextric, Carrera, Carrera GO!!!, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar, Betta, JK Products, Red Fox, Arduino, Raspberry Pi, Windows and Mac, and all other product names and trademarks, belong to their respective owners. APEX Race Control is not affiliated with or endorsed by them.</small></footer>
-</body></html>
+<footer>
+  <img src="img/logo.png" alt="" width="28" height="28"> APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br>
+  <small>Trackmate, Race Coordinator, Scalextric, Carrera, Carrera GO!!!, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar, Betta, JK Products, Red Fox, Arduino, Raspberry Pi, Windows and Mac, and all other product names and trademarks, belong to their respective owners. APEX Race Control is not affiliated with or endorsed by them.</small>
+</footer>
+</body>
+</html>
