@@ -2,7 +2,7 @@
 
 **Status:** local preview only. Not pushed to `meiringjohan/apex-website`. Live site unchanged until Johan gives the go.
 
-Design: Option 3 Soft Modern (soft bento). Home hero shows the APEX logo badge. — pastel wash, pill nav, rounded cards, purple/green type, light split hero (no big splash banner).
+Design: Option 3 Soft Modern (soft bento). Home hero shows the APEX logo badge. Neutral white cards, dark slate type, APEX green (#8dc63f) accents only — pill nav, light split hero (no splash banner).
 
 ## Pages (18)
 
