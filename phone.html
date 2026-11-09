@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phone · APEX Race Control</title>
+<meta name="description" content="APEX on a phone: live results, race screen, Race Control, check-in, team phone, broadcast remote and more — no app install.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
+  <nav class="nav-panel" id="nav-panel" data-nav-panel>
+    <a href="index.html">Home</a>
+    <a href="timing.html">Timing</a>
+    <a href="screens.html">Screens</a>
+    <a href="phone.html" class="is-active">Phone</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="pricing.html">Pricing</a>
+    <details class="nav-dd">
+      <summary>Add-ons</summary>
+      <div class="nav-dd-menu">
+        <span class="dd-label">Home</span>
+        <a href="add-ons/championship.html">Championship</a><a href="add-ons/endurance.html">Endurance</a><a href="add-ons/stream-overlay.html">Stream Overlay</a>
+        <span class="dd-label">Club</span>
+        <a href="add-ons/championship-plus.html">Championship Plus</a><a href="add-ons/endurance-plus.html">Endurance Plus</a><a href="add-ons/event-manager.html">Event Manager</a><a href="add-ons/event-manager-plus.html">Event Manager Plus</a><a href="add-ons/screen-studio.html">Screen Studio</a><a href="add-ons/broadcast-studio.html">Broadcast Studio</a><a href="add-ons/api.html">API</a><a href="add-ons/extra-track.html">Extra Track</a>
+      </div>
+    </details>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <span class="currency-switch" role="group" aria-label="Currency">
+      <button type="button" data-currency-btn="ZAR" aria-pressed="false">ZAR</button>
+      <button type="button" data-currency-btn="USD" aria-pressed="false">USD</button>
+    </span>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-panel">Menu</button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> · Phone</div>
+  <h1>Phone</h1>
+  <p class="lede">Drivers, marshals and race directors open APEX in the phone browser — no app to install. The phone page lists what you can do right now and follows race control by itself.</p>
+</div>
+
+<section class="wrap" style="padding-top:8px">
+  <div class="who"><p><b>Who it’s for.</b> Drivers following a race or downloading results; race directors running Race Control from a phone; Club check-in and next-heat cards; Endurance Plus teams; Broadcast Studio directors; Championship Plus scrutineers.</p></div>
+
+  <h2 style="margin-top:8px">At a glance</h2>
+  <ul class="phone-overview"><li><a href="#hub"><img src="screens/phone/hub-home.jpg" alt=""><span>Phone page</span></a></li><li><a href="#live"><img src="screens/phone/live-results.jpg" alt=""><span>Live results</span></a></li><li><a href="#race-screen"><img src="screens/phone/race-screen.jpg" alt=""><span>Race screen</span></a></li><li><a href="#race-control"><img src="screens/phone/race-control.jpg" alt=""><span>Race Control</span></a></li><li><a href="#results"><img src="screens/phone/results.jpg" alt=""><span>Results</span></a></li><li><a href="#check-in"><img src="screens/phone/check-in.jpg" alt=""><span>Check-in</span></a></li><li><a href="#next-heat"><img src="screens/phone/driver-card.jpg" alt=""><span>Next heat</span></a></li><li><a href="#team"><img src="screens/phone/team-phone.jpg" alt=""><span>Team phone</span></a></li><li><a href="#broadcast"><img src="screens/phone/broadcast-remote.jpg" alt=""><span>Broadcast remote</span></a></li><li><a href="#scrutineer"><img src="screens/phone/scrutineer.jpg" alt=""><span>Scrutineer</span></a></li></ul>
+
+  
+  <article class="phone-block" id="hub">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Home</span><span class="flag">Club</span></div>
+      <h2>Phone page (hub)</h2>
+      <p class="lede-mini">Scan the QR on the race screen (or a printed QR sheet) and the phone page opens. It needs no login for results and the race screen. Options appear as race control opens them.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Live results while a race runs</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Results after a race finishes</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Check-in or sign-in at Club meetings</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Team phone in an endurance race</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Stream director with Broadcast Studio</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Log in for Race Control</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/hub-home.jpg" data-caption="Phone page" aria-label="Enlarge: Phone page">
+          <img src="screens/phone/hub-home.jpg" alt="Phone page" loading="lazy">
+        </button>
+        <figcaption>Phone page</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block reverse" id="live">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Home</span><span class="flag">Club</span></div>
+      <h2>Live results</h2>
+      <p class="lede-mini">While a race is on, Live results shows the race, heat and time to go, then the running order. It updates by itself.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Position, driver, laps, best lap</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Gap to the leader</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Updates every few seconds</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/live-results.jpg" data-caption="Live results" aria-label="Enlarge: Live results">
+          <img src="screens/phone/live-results.jpg" alt="Live results" loading="lazy">
+        </button>
+        <figcaption>Live results</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block" id="race-screen">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Home</span><span class="flag">Club</span></div>
+      <h2>Race screen on a phone</h2>
+      <p class="lede-mini">The same race screen as the TV, sized for the phone.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Lap records, heat and clock, start lights</span></li><li><span class="tick" aria-hidden="true">✓</span><span>On deck</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Each lane’s driver box: laps, last and best, gap, laps led</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/race-screen.jpg" data-caption="Race screen" aria-label="Enlarge: Race screen">
+          <img src="screens/phone/race-screen.jpg" alt="Race screen" loading="lazy">
+        </button>
+        <figcaption>Race screen</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block reverse" id="race-control">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Home</span><span class="flag">Club</span></div>
+      <h2>Race Control on a phone</h2>
+      <p class="lede-mini">Log in with your APEX username and password to run Race Control from the phone browser.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Track call and clock</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Main button: start / resume / confirm</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Autopilot and Keep screen on</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Restart heat and End race</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Running order</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/race-control.jpg" data-caption="Race Control" aria-label="Enlarge: Race Control">
+          <img src="screens/phone/race-control.jpg" alt="Race Control" loading="lazy">
+        </button>
+        <figcaption>Race Control</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block" id="results">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Home</span><span class="flag">Club</span></div>
+      <h2>Results PDFs</h2>
+      <p class="lede-mini">After a race, download everyone’s results PDF, or pick your name for your own — one link for every driver, no login.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Race results PDF for everyone</span></li><li><span class="tick" aria-hidden="true">✓</span><span>My results: laps, times, reaction times, graphs</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Club: class-rules PDFs and provisional/final while scrutineering runs</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/results.jpg" data-caption="Results" aria-label="Enlarge: Results">
+          <img src="screens/phone/results.jpg" alt="Results" loading="lazy">
+        </button>
+        <figcaption>Results</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block reverse" id="check-in">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Club</span></div>
+      <h2>Club check-in</h2>
+      <p class="lede-mini">While race control has check-in open, drivers pick their name, tick today’s classes (and car when asked), and check in. The phone remembers you for next time.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Pick name and classes</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Car when the class asks for it</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Checked-in card with check out</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/check-in.jpg" data-caption="Check-in" aria-label="Enlarge: Check-in">
+          <img src="screens/phone/check-in.jpg" alt="Check-in" loading="lazy">
+        </button>
+        <figcaption>Check-in</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block" id="next-heat">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Club</span></div>
+      <h2>Next heat & penalties</h2>
+      <p class="lede-mini">Your driver card shows the next heat, lane and colour, and when to go. When the race allows penalty protests, My penalties lists what race control gave you.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Next heat, lane and colour</span></li><li><span class="tick" aria-hidden="true">✓</span><span>When to go (now / next / heats away)</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Protest or withdraw within the app’s window</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/driver-card.jpg" data-caption="Next heat" aria-label="Enlarge: Next heat">
+          <img src="screens/phone/driver-card.jpg" alt="Next heat" loading="lazy">
+        </button>
+        <figcaption>Next heat</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block reverse" id="team">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Endurance Plus</span></div>
+      <h2>Team phone</h2>
+      <p class="lede-mini">In an endurance race with team phones, each team follows the race and can send requests for race control to confirm.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Position, gaps, who is driving</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Stint and next driver / lane</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Drive time and obligations</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Captain or PIN member can request changes; cancel a waiting request</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/team-phone.jpg" data-caption="Team phone" aria-label="Enlarge: Team phone">
+          <img src="screens/phone/team-phone.jpg" alt="Team phone" loading="lazy">
+        </button>
+        <figcaption>Team phone</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block" id="broadcast">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Broadcast Studio</span></div>
+      <h2>Broadcast remote</h2>
+      <p class="lede-mini">Runs the Stream director from a phone. A Broadcast director login opens the remote and nothing else; race coordinators and administrators can open it too.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Auto / Assist / Manual</span></li><li><span class="tick" aria-hidden="true">✓</span><span>ON AIR and take buttons</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Hold all, Back to auto, Clean feed</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/broadcast-remote.jpg" data-caption="Broadcast remote" aria-label="Enlarge: Broadcast remote">
+          <img src="screens/phone/broadcast-remote.jpg" alt="Broadcast remote" loading="lazy">
+        </button>
+        <figcaption>Broadcast remote</figcaption>
+      </figure>
+    </div>
+  </article>
+  <article class="phone-block reverse" id="scrutineer">
+    <div class="phone-block-copy">
+      <div class="phone-flags"><span class="flag">Championship Plus</span></div>
+      <h2>Scrutineering</h2>
+      <p class="lede-mini">Open a scrutineer link (or log in as a scrutineer), pick a car and work through its checklist. You never see your own car in the list.</p>
+      <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Tick items or type measured values</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Limits show next to each item</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Add a photo where it helps</span></li></ul>
+    </div>
+    <div class="phone-block-media">
+      <figure class="shot shot--phone">
+        <button type="button" class="shot-frame" data-lightbox="screens/phone/scrutineer.jpg" data-caption="Scrutineer" aria-label="Enlarge: Scrutineer">
+          <img src="screens/phone/scrutineer.jpg" alt="Scrutineer" loading="lazy">
+        </button>
+        <figcaption>Scrutineer</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <p class="cta-row"><a class="btn" href="screens.html">Screens &amp; streaming</a> <a class="btn" href="pricing.html" style="margin-left:8px">Pricing</a></p>
+</section>
+
+<footer>
+  <img src="img/logo.png" alt="" width="28" height="28"> APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br>
+  <small>Trackmate, Race Coordinator, Scalextric, Carrera, Carrera GO!!!, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar, Betta, JK Products, Red Fox, Arduino, Raspberry Pi, Windows and Mac, and all other product names and trademarks, belong to their respective owners. APEX Race Control is not affiliated with or endorsed by them.</small>
+</footer>
+<script src="pricing.js" defer></script>
+<script src="site.js" defer></script>
+</body>
+</html>
