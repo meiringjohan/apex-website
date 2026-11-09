@@ -1,6 +1,6 @@
 :root{
   /* APEX green from app server/branding.js: APEX='#8dc63f', darkStrong='#a6dc4f', light='#5d9c1c' */
-  --bg:#f7faf5; --surface:#ffffff; --surface-2:#f3f4f6; --border:#e5e7eb;
+  --bg:#f3f5f7; --surface:#ffffff; --surface-2:#f3f4f6; --border:#e5e7eb;
   --text:#111827; --text-2:#1f2937; --muted:#64748b;
   --brand:#8dc63f; --brand-strong:#5d9c1c; --brand-ink:#0b1204; --brand-soft:rgba(141,198,63,.14);
   --accent:#8dc63f; --radius:24px; --shadow:0 10px 28px rgba(15,23,42,.07);
@@ -8,7 +8,7 @@
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font-family:var(--font);background:
-  radial-gradient(900px 420px at 50% -10%,rgba(141,198,63,.10),transparent 55%),
+  radial-gradient(1200px 600px at 10% -10%,rgba(141,198,63,.12),transparent 60%),
   var(--bg);color:var(--text);line-height:1.6}
 a{color:var(--brand-strong)}
 .nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;
@@ -252,4 +252,57 @@ table.rank{font-size:14px}
 }
 @media(max-width:520px){
   .hero-logo{width:min(168px, 52vw);}
+}
+
+
+/* ===== Home hero — light splash (app light-mode wash over splash.jpg) ===== */
+.hero-splash{
+  position:relative; margin:12px 16px 8px; border-radius:28px; overflow:hidden;
+  border:1px solid var(--border); box-shadow:var(--shadow);
+  min-height:420px;
+  display:flex; align-items:center;
+}
+.hero-splash--a{
+  /* App light splash, right side lightened so the band stays white/light */
+  background:
+    linear-gradient(100deg, rgba(255,255,255,.985) 28%, rgba(255,255,255,.94) 52%, rgba(255,255,255,.88)),
+    url('img/splash.jpg') right center / cover no-repeat;
+  color:var(--text);
+}
+.hero-splash-inner{
+  position:relative; z-index:1;
+  max-width:640px; padding:42px 40px 36px;
+}
+.hero-mark{
+  display:inline-flex; align-items:center; gap:10px;
+  margin:0 0 18px; text-decoration:none; color:var(--text);
+  font-family:var(--display); font-weight:800; font-size:15px;
+}
+.hero-mark-logo{
+  width:44px; height:44px; border-radius:50%;
+  box-shadow:0 4px 14px rgba(17,22,28,.10);
+  background:#fff;
+}
+.hero-mark-text b{ color:var(--brand); }
+.hero-splash .kicker{ margin:0 0 8px; color:var(--brand-strong); }
+.hero-splash .date{ margin:0 0 10px; }
+.hero-splash .date .m{ color:var(--text); }
+.hero-splash .date .y{ color:var(--brand-strong); }
+.hero-splash .tagline{
+  margin:0 0 12px; font-family:var(--display); font-weight:800; font-size:16px; color:var(--text-2);
+}
+.hero-splash .lead{ margin:0 0 22px; max-width:34em; color:var(--text-2); font-size:17px; }
+.hero-splash .hero-note{ margin:14px 0 0; max-width:36em; }
+@media(max-width:900px){
+  .hero-splash{ margin:8px; min-height:360px; }
+  .hero-splash-inner{ padding:28px 22px 24px; }
+  .hero-splash--a{
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.985) 42%, rgba(255,255,255,.90)),
+      url('img/splash.jpg') center top / cover no-repeat;
+  }
+}
+@media(max-width:520px){
+  .hero-mark-logo{ width:36px; height:36px; }
+  .hero-splash-inner{ padding:22px 18px 20px; }
 }

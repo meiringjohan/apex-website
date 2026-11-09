@@ -44,7 +44,7 @@
 <div class="page-hero">
   <div class="breadcrumb"><a href="index.html">Home</a> · Timing</div>
   <h1>How timing works</h1>
-  <p class="lede">Built so clubs can trust lap times with the hardware they already have: the APEX lap counter, Trackmate, and Arduinos running Race Coordinator’s program.</p>
+  <p class="lede">Built so clubs can trust lap times with the hardware they already have: the APEX lap counter, Trackmate hardware, and an Arduino running the Race Coordinator Arduino sketch.</p>
 </div>
 <section class="wrap" style="padding-top:8px">
   <h2>At a glance</h2>
@@ -59,9 +59,9 @@
     <thead><tr><th>Rank</th><th>Lap counter</th><th>With APEX</th></tr></thead>
     <tbody>
       <tr><td>1</td><td><b>APEX lap counter 3.0</b> — hardware interrupt at the sensor edge</td><td>Within <b>0.01 ms</b> per lap (raw within 0.005 ms; worst 0.024 ms with bouncing contacts)</td></tr>
-      <tr><td>2</td><td>Race Coordinator Arduino (AI)</td><td>Corrected to within <b>0.01 ms</b> per lap</td></tr>
-      <tr><td>3</td><td>Trackmate</td><td>Corrected to within <b>0.01 ms</b> per lap</td></tr>
-      <tr><td>–</td><td>Race Coordinator Arduino (original)</td><td>Corrected to within <b>0.01 ms</b> per lap</td></tr>
+      <tr><td>2</td><td>Arduino with Race Coordinator Arduino sketch (AI)</td><td>Corrected to within <b>0.01 ms</b> per lap</td></tr>
+      <tr><td>3</td><td>Trackmate hardware</td><td>Corrected to within <b>0.01 ms</b> per lap</td></tr>
+      <tr><td>–</td><td>Arduino with Race Coordinator Arduino sketch (original)</td><td>Corrected to within <b>0.01 ms</b> per lap</td></tr>
     </tbody>
   </table>
 
@@ -91,7 +91,7 @@
     <li><span class="tick" aria-hidden="true">✓</span><span><b>Median, not average</b> — one bad lap doesn’t skew typical-lap checks</span></li>
   </ul>
 
-  <div class="shot-grid"><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/race-control-clock.jpg" data-caption="Race Control with heat clock" aria-label="Enlarge: Race Control with heat clock"><img src="screens/timing/race-control-clock.jpg" alt="Race Control with heat clock" loading="lazy"></button><figcaption>Race Control with heat clock</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/tracks-settings.jpg" data-caption="Track timing settings" aria-label="Enlarge: Track timing settings"><img src="screens/timing/tracks-settings.jpg" alt="Track timing settings" loading="lazy"></button><figcaption>Track timing settings</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/hardware.jpg" data-caption="Hardware overview" aria-label="Enlarge: Hardware overview"><img src="screens/timing/hardware.jpg" alt="Hardware overview" loading="lazy"></button><figcaption>Hardware overview</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/arduino.jpg" data-caption="Arduino / Race Coordinator hardware" aria-label="Enlarge: Arduino / Race Coordinator hardware"><img src="screens/timing/arduino.jpg" alt="Arduino / Race Coordinator hardware" loading="lazy"></button><figcaption>Arduino / Race Coordinator hardware</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/trackmate.jpg" data-caption="Trackmate hardware" aria-label="Enlarge: Trackmate hardware"><img src="screens/timing/trackmate.jpg" alt="Trackmate hardware" loading="lazy"></button><figcaption>Trackmate hardware</figcaption></figure></div>
+  <div class="shot-grid"><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/race-control-clock.jpg" data-caption="Race Control with heat clock" aria-label="Enlarge: Race Control with heat clock"><img src="screens/timing/race-control-clock.jpg" alt="Race Control with heat clock" loading="lazy"></button><figcaption>Race Control with heat clock</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/tracks-settings.jpg" data-caption="Track timing settings" aria-label="Enlarge: Track timing settings"><img src="screens/timing/tracks-settings.jpg" alt="Track timing settings" loading="lazy"></button><figcaption>Track timing settings</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/hardware.jpg" data-caption="Hardware overview" aria-label="Enlarge: Hardware overview"><img src="screens/timing/hardware.jpg" alt="Hardware overview" loading="lazy"></button><figcaption>Hardware overview</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/arduino.jpg" data-caption="Arduino with Race Coordinator Arduino sketch" aria-label="Enlarge: Arduino with Race Coordinator Arduino sketch"><img src="screens/timing/arduino.jpg" alt="Arduino with Race Coordinator Arduino sketch" loading="lazy"></button><figcaption>Arduino with Race Coordinator Arduino sketch</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/timing/trackmate.jpg" data-caption="Trackmate hardware" aria-label="Enlarge: Trackmate hardware"><img src="screens/timing/trackmate.jpg" alt="Trackmate hardware" loading="lazy"></button><figcaption>Trackmate hardware</figcaption></figure></div>
 
   <p class="cta-row"><a class="btn" href="hardware.html">Hardware</a> <a href="pricing.html">Pricing →</a></p>
 </section>

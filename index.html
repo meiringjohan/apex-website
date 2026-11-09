@@ -41,25 +41,24 @@
   </div>
 </header>
 
-<section class="hero hero-split">
-  <div class="hero-copy">
+<section class="hero hero-splash hero-splash--a" aria-label="Coming February 2027">
+  <div class="hero-splash-inner">
+    <div class="hero-mark">
+      <img class="hero-mark-logo" src="img/logo-light.png" width="48" height="48" alt="">
+      <span class="hero-mark-text">APEX <b>Race Control</b></span>
+    </div>
     <p class="kicker">Coming</p>
     <h1 class="date"><span class="m">February</span> <span class="y">2027</span></h1>
-    <p class="lead">Slot car timing and race control for the garage track and the club hall. Club testing runs from mid-December 2026.</p>
     <p class="tagline">Precision Timing. Intelligent Control.</p>
+    <p class="lead">Slot car timing and race control for the garage track and the club hall. Club testing runs from mid-December 2026.</p>
     <a class="btn" href="mailto:info@apexslotcarsystems.co.za?subject=Keep%20me%20posted%20on%20APEX">Keep me posted</a>
     <p class="muted hero-note">By clicking “Keep me posted” your email will only be used to notify you of APEX Race Control product launches and related updates. We will not sell or share it.</p>
-  </div>
-  <div class="hero-art" role="img" aria-label="APEX Race Control logo">
-    <div class="hero-motif" aria-hidden="true"></div>
-    <img class="hero-logo" src="img/logo.png" width="320" height="320" alt="APEX Race Control">
-    <p class="hero-art-tagline">Precision Timing. Intelligent Control.</p>
   </div>
 </section>
 <section id="timing" class="wrap">
   <h2>Timing you can trust</h2>
   <div class="grid3">
-    <div class="card"><h3>Clock correction</h3><p>Every lap is corrected against the computer’s accurate clock. A typical Arduino lap counter can drift 30 ms on a 6-second lap. APEX brings that down to 0.01 ms per lap with any supported counter, and 0.005 ms with the APEX lap counter (hardware interrupt timestamps). Trackmate and Race Coordinator hardware get the same correction.</p></div>
+    <div class="card"><h3>Clock correction</h3><p>Every lap is corrected against the computer’s accurate clock. A typical Arduino lap counter can drift 30 ms on a 6-second lap. APEX brings that down to 0.01 ms per lap with any supported counter, and 0.005 ms with the APEX lap counter (hardware interrupt timestamps). Trackmate hardware and an Arduino running the Race Coordinator Arduino sketch get the same correction.</p></div>
     <div class="card"><h3>Part-lap learning</h3><p>APEX learns the track. Partial laps are calculated from the timing data so positions stay fair even when a car is mid-lap when the heat ends or a track call happens. Packs are timed exactly — cars crossing together are timed as precisely as a single car, even with bouncing contacts.</p></div>
     <div class="card"><h3>Nothing lost</h3><p>Every lap is saved the moment it happens. A power cut or restart loses nothing. The lap counter times every lap itself and each lap is written immediately.</p></div>
   </div>
@@ -113,8 +112,8 @@
   <h2>More that just works</h2>
   <div class="grid3">
     <div class="card"><h3>Fair heats</h3><p>Rotations put every driver on every lane. Late drivers and early leavers are handled; heats already run never change.</p></div>
-    <div class="card"><h3>Your hardware</h3><p>Works with the APEX lap counter, Trackmate, or an Arduino running Race Coordinator’s program. Same clock correction on all of them.</p></div>
-    <div class="card"><h3>Import history</h3><p>Moving from Race Coordinator or TrackMate? Import your database or exports — drivers, races, results, rotations and the rest.</p></div>
+    <div class="card"><h3>Your hardware</h3><p>Works with the APEX lap counter, Trackmate hardware, or an Arduino running the Race Coordinator Arduino sketch. Same clock correction on all of them.</p></div>
+    <div class="card"><h3>Import history</h3><p>Moving from Race Coordinator or Trackmate? Import your database or exports — drivers, races, results, rotations and the rest.</p></div>
   </div>
   <p class="cta-row" style="justify-content:center"><a class="btn" href="pricing.html">See pricing</a></p>
 </section>
