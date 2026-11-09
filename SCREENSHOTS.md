@@ -25,3 +25,6 @@ Shipped with current real app captures (guide + handoff + docs/img + live site i
 - Production download badges (blocked until Johan’s build go)
 
 Capture date for this preview pack: **2026-11-09** (files copied from redesign-branch guide/handoff assets as of tip `953c83a` / live site `4cbce9bc`).
+
+## Overlay gallery backgrounds (9 Nov 2026)
+White-plate overlay shots (tower / sponsor / stream-overlay tower & results & classic) were re-composited onto a shared track plate derived from the Battle-box capture so every overlay example sits on the same track/test background. Fresh in-app re-capture is still recommended after UI freeze.

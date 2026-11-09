@@ -2,9 +2,19 @@
   const btn = document.querySelector('[data-nav-toggle]');
   const panel = document.querySelector('[data-nav-panel]');
   if (btn && panel) {
-    btn.addEventListener('click', () => {
+    const nav = btn.closest('.nav');
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
       const open = panel.classList.toggle('is-open');
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (nav) nav.classList.toggle('is-menu-open', open);
+    });
+    document.addEventListener('click', (e) => {
+      if (!panel.classList.contains('is-open')) return;
+      if (panel.contains(e.target) || btn.contains(e.target)) return;
+      panel.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+      if (nav) nav.classList.remove('is-menu-open');
     });
   }
   document.addEventListener('click', (e) => {
