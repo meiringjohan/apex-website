@@ -1,0 +1,26 @@
+{
+  "usd_to_zar": 16.5,
+  "note_zar": "Rand prices converted at R{rate} to the US dollar, rounded up to the nearest R5.",
+  "items": {
+    "home_base": { "label": "Home base", "usd": 0, "billing": "free" },
+    "club_base": { "label": "Club base", "usd": 50, "billing": "once" },
+    "home_championship": { "label": "Championship", "usd": 5, "usd_2y": 8.5, "usd_3y": 11.25, "billing": "year" },
+    "home_endurance": { "label": "Endurance", "usd": 5, "usd_2y": 8.5, "usd_3y": 11.25, "billing": "year" },
+    "home_stream_overlay": { "label": "Stream Overlay", "usd": 5, "usd_2y": 8.5, "usd_3y": 11.25, "billing": "year" },
+    "home_complete": { "label": "Home Complete", "usd": 12, "usd_2y": 20.4, "usd_3y": 27, "billing": "year" },
+    "championship_plus": { "label": "Championship Plus", "usd": 25, "usd_2y": 42.5, "usd_3y": 56.25, "billing": "year" },
+    "endurance_plus": { "label": "Endurance Plus", "usd": 25, "usd_2y": 42.5, "usd_3y": 56.25, "billing": "year" },
+    "event_manager": { "label": "Event Manager", "usd": 25, "usd_2y": 42.5, "usd_3y": 56.25, "billing": "year" },
+    "event_manager_plus": { "label": "Event Manager Plus", "usd": 40, "usd_2y": 68, "usd_3y": 90, "billing": "year" },
+    "screen_studio": { "label": "Screen Studio", "usd": 25, "usd_2y": 42.5, "usd_3y": 56.25, "billing": "year" },
+    "api": { "label": "API", "usd": 25, "usd_2y": 42.5, "usd_3y": 56.25, "billing": "year" },
+    "broadcast_studio": { "label": "Broadcast Studio", "usd": 50, "usd_2y": 85, "usd_3y": 112.5, "billing": "year" },
+    "extra_track": { "label": "Extra Track", "usd": 10, "usd_2y": 17, "usd_3y": 22.5, "billing": "year" },
+    "bundle_race_club": { "label": "Race Club", "usd": 64, "usd_2y": 108.8, "usd_3y": 144, "billing": "year",
+      "includes": ["championship_plus", "endurance_plus", "event_manager"] },
+    "bundle_broadcast": { "label": "Broadcast", "usd": 64, "usd_2y": 108.8, "usd_3y": 144, "billing": "year",
+      "includes": ["broadcast_studio", "screen_studio"] },
+    "bundle_complete": { "label": "Complete", "usd": 162, "usd_2y": 275.4, "usd_3y": 364.5, "billing": "year",
+      "includes": ["championship_plus", "endurance_plus", "event_manager_plus", "broadcast_studio", "screen_studio", "api"] }
+  }
+}

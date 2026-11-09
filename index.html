@@ -4,227 +4,118 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>APEX Race Control · Slot car timing for home and club</title>
-<meta name="description" content="APEX Race Control: accurate slot car lap timing and race management for home racers and clubs.">
+<meta name="description" content="Accurate slot car lap timing and race management for home racers and clubs. Coming February 2027.">
 <link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <a class="brand" href="/"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
-  <nav>
-    <a href="#timing">Timing</a>
-    <a href="#screens">Screens</a>
-    <a href="#autopilot">Auto Pilot</a>
-    <a href="#wizard">Wizards</a>
+  <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
+  <nav class="nav-panel" id="nav-panel" data-nav-panel>
+    <a href="index.html" class="is-active">Home</a>
+    <a href="timing.html">Timing</a>
+    <a href="screens.html">Screens</a>
+    <a href="hardware.html">Hardware</a>
     <a href="pricing.html">Pricing</a>
-    <a href="#contact">Contact</a>
+    <details class="nav-dd">
+      <summary>Add-ons</summary>
+      <div class="nav-dd-menu">
+        <span class="dd-label">Home</span>
+        <a href="add-ons/championship.html">Championship</a><a href="add-ons/endurance.html">Endurance</a><a href="add-ons/stream-overlay.html">Stream Overlay</a>
+        <span class="dd-label">Club</span>
+        <a href="add-ons/championship-plus.html">Championship Plus</a><a href="add-ons/endurance-plus.html">Endurance Plus</a><a href="add-ons/event-manager.html">Event Manager</a><a href="add-ons/event-manager-plus.html">Event Manager Plus</a><a href="add-ons/screen-studio.html">Screen Studio</a><a href="add-ons/broadcast-studio.html">Broadcast Studio</a><a href="add-ons/api.html">API</a><a href="add-ons/extra-track.html">Extra Track</a>
+      </div>
+    </details>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
   </nav>
+  <div class="nav-end">
+    <span class="currency-switch" role="group" aria-label="Currency">
+      <button type="button" data-currency-btn="ZAR" aria-pressed="false">ZAR</button>
+      <button type="button" data-currency-btn="USD" aria-pressed="false">USD</button>
+    </span>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-panel">Menu</button>
+  </div>
 </header>
 
-<section class="hero">
-  <img class="hero-img" src="img/splash.jpg" alt="APEX Race Control" onerror="this.style.display='none'">
-  <p class="kicker">Coming</p>
-  <h1 class="date"><span class="m">February</span> <span class="y">2027</span></h1>
-  <p class="lead">Slot car timing and race control for the garage track and the club hall. Club testing runs from mid-December 2026.</p>
-  <a class="btn" href="mailto:info@apexslotcarsystems.co.za?subject=Keep%20me%20posted%20on%20APEX">Keep me posted</a>
-  <p style="font-size:13px;color:#7d8996;max-width:640px;margin:12px auto 0;">By clicking “Keep me posted” your email will only be used to notify you of APEX Race Control product launches and related updates. We will not sell or share it.</p>
+<section class="hero hero-split">
+  <div class="hero-copy">
+    <p class="kicker">Coming</p>
+    <h1 class="date"><span class="m">February</span> <span class="y">2027</span></h1>
+    <p class="lead">Slot car timing and race control for the garage track and the club hall. Club testing runs from mid-December 2026.</p>
+    <p class="tagline">Precision Timing. Intelligent Control.</p>
+    <a class="btn" href="mailto:info@apexslotcarsystems.co.za?subject=Keep%20me%20posted%20on%20APEX">Keep me posted</a>
+    <p class="muted hero-note">By clicking “Keep me posted” your email will only be used to notify you of APEX Race Control product launches and related updates. We will not sell or share it.</p>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <img class="hero-badge" src="assets/apex-a-mark.svg" alt="">
+    <img class="hero-slotcar" src="assets/hero-slotcar.svg" alt="">
+  </div>
 </section>
-
 <section id="timing" class="wrap">
   <h2>Timing you can trust</h2>
   <div class="grid3">
-    <div class="card">
-      <h3>Clock correction</h3>
-      <p>Every lap is corrected against the computer’s accurate clock. A typical Arduino lap counter can drift 30 ms on a 6-second lap. APEX brings that down to 0.01 ms per lap with any supported counter, and 0.005 ms with the APEX lap counter (hardware interrupt timestamps). Trackmate and Race Coordinator hardware get the same correction.</p>
-    </div>
-    <div class="card">
-      <h3>Part-lap learning</h3>
-      <p>APEX learns the track. Partial laps are calculated from the timing data so positions stay fair even when a car is mid-lap when the heat ends or a track call happens. Packs are timed exactly — cars crossing together are timed as precisely as a single car, even with bouncing contacts.</p>
-    </div>
-    <div class="card">
-      <h3>Nothing lost</h3>
-      <p>Every lap is saved the moment it happens. A power cut or restart loses nothing. The lap counter times every lap itself and each lap is written immediately.</p>
-    </div>
+    <div class="card"><h3>Clock correction</h3><p>Every lap is corrected against the computer’s accurate clock. A typical Arduino lap counter can drift 30 ms on a 6-second lap. APEX brings that down to 0.01 ms per lap with any supported counter, and 0.005 ms with the APEX lap counter (hardware interrupt timestamps). Trackmate and Race Coordinator hardware get the same correction.</p></div>
+    <div class="card"><h3>Part-lap learning</h3><p>APEX learns the track. Partial laps are calculated from the timing data so positions stay fair even when a car is mid-lap when the heat ends or a track call happens. Packs are timed exactly — cars crossing together are timed as precisely as a single car, even with bouncing contacts.</p></div>
+    <div class="card"><h3>Nothing lost</h3><p>Every lap is saved the moment it happens. A power cut or restart loses nothing. The lap counter times every lap itself and each lap is written immediately.</p></div>
   </div>
+  <p class="cta-row"><a class="btn" href="timing.html">How timing works</a></p>
 </section>
 
 <section id="screens" class="wrap">
   <h2>See it in action</h2>
   <div class="grid3">
-    <div class="card">
-      <img src="img/race control.png" alt="Race Control" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Race Control</h3>
-      <p>The full race control page: heat clock, running order with lap corrections, big Track call button, race progress strip, control panel, live race screen preview, and broadcast basics. Everything needed to run the night from one screen.</p>
-    </div>
-    <div class="card">
-      <img src="img/DS-01-step-03-club.png" alt="Live race screen" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Live race screen</h3>
-      <p>The tower that drivers and spectators see. Live order, laps, last and best, gaps, on-deck for the next heat, and all-time / race lap records. Updates the moment a car crosses.</p>
-    </div>
-    <div class="card">
-      <img src="img/PR-01-step-04-club.png" alt="Open practice screen" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Open practice</h3>
-      <p>Each lane’s last lap, best lap and full lap list on the big screen. Drivers warm up and check times before the first heat. Works on the club TV or any browser.</p>
-    </div>
-    <div class="card">
-      <img src="img/QL-01-step-05-club.png" alt="Qualifying" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Qualifying</h3>
-      <p>Single-car or multi-car qualifying with best lap counting. On-deck list shows who’s next. Clean, focused screen so the driver on track is the centre of attention.</p>
-    </div>
-    <div class="card">
-      <img src="img/RC-place-cars-after-resume.png" alt="Place cars after resume" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Controlled restart</h3>
-      <p>After a track call or yellow flag, place every car on the start line and tick each lane. Resume only starts the countdown once the field is ready. No arguments about who was where.</p>
-    </div>
-    <div class="card">
-      <img src="img/home-review.jpg" alt="Heat review" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Heat review</h3>
-      <p>After every heat the results are clear. Add or delete laps, strike false fastest laps, hand out penalties, then confirm and go to the next heat. Late drivers can join between heats.</p>
-    </div>
-    <div class="card">
-      <img src="img/home-wizard.jpg" alt="Wizard" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Wizard-driven setup</h3>
-      <p>Every setup is a few short steps with selection tiles. Next stays off until the step is complete and nothing starts blank. Quick race, championship, endurance or event — you are racing in minutes.</p>
-    </div>
-    <div class="card">
-      <img src="img/OR-01-step-03-club.png" alt="Race setup wizard" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Race setup wizard</h3>
-      <p>Step-by-step for any format. Car class, manufacturers, driver entry, rotation, marshalling, rules, fuel, race screen setup — the right side shows what this race will be so nothing is left blank.</p>
-    </div>
-    <div class="card">
-      <img src="img/FS-01-step-04.png" alt="Get ready to race" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Get ready to race</h3>
-      <p>Five clear steps on first run: your track, your drivers, your cars, your first race template, then start racing. Each step ticks itself when it’s done.</p>
-    </div>
-    <div class="card">
-      <img src="img/DT-01-step-01-club.png" alt="Drivers" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Drivers</h3>
-      <p>Everyone who races here. Import from Excel, add by hand, set roles (race coordinator, broadcast director, etc.). Seeding lists for championships and events.</p>
-    </div>
-    <div class="card">
-      <img src="img/TL-01-step-05-club.png" alt="Tracks" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Tracks</h3>
-      <p>Lanes, colours, lap counter type and all the timing settings for each track. Part-lap learning is saved per class so positions stay fair when a heat ends mid-lap.</p>
-    </div>
-    <div class="card">
-      <img src="img/RT-01-step-02-club.png" alt="Race templates" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Race templates</h3>
-      <p>Your own formats plus the APEX library (22 ready-made). Build once, reuse every club night. Usual meetings saved from a race so the next one starts faster.</p>
-    </div>
-    <div class="card">
-      <img src="img/RS-01-step-02-club.png" alt="Screen builder" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Screen builder</h3>
-      <p>Drag, resize and arrange cards the way your club wants them. Heat and start lights, race clock, on deck, lap records — build the layout once and it advances with the race.</p>
-    </div>
-    <div class="card">
-      <img src="img/PH-01-step-07-home.png" alt="Phone race control" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Race control on your phone</h3>
-      <p>The same controls on a phone or tablet. Track call, resume, restart, end race, keep screen on. Works as a remote or as a full control surface.</p>
-    </div>
-    <div class="card">
-      <img src="img/PH-02-step-01-club.png" alt="Phone menu" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Phone check-in and more</h3>
-      <p>Drivers scan the race screen QR and check in. Officials can open the race screen, stream director, or log in for race control, pit crew and other roles.</p>
-    </div>
-    <div class="card">
-      <img src="img/PH-02-step-16-club.png" alt="Broadcast remote" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Broadcast remote</h3>
-      <p>Direct the stream overlay from your phone. Auto, assist or manual. Swap lower thirds, standings, battle box, lap record flash — changes reach the stream live.</p>
-    </div>
-    <div class="card">
-      <img src="img/BU-01-step-02-club.png" alt="Backup" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Backup and restore</h3>
-      <p>Encrypted backups of everything. Automatic after every race. Copy the club setup (cars, templates, marshalling, calendar) to another computer. Drivers and results stay separate.</p>
-    </div>
-    <div class="card">
-      <img src="img/championship-standings.jpg" alt="Championship" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Championships</h3>
-      <p>Seasons with dropped rounds and seeding. One-day events with imported drivers. Multi-day meetings with carry-over to the finals. Clear standings and per-driver reports.</p>
-    </div>
-    <div class="card">
-      <img src="img/marshalling.jpg" alt="Marshalling" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Marshalling</h3>
-      <p>Marshals for every heat, shared out evenly, with a penalty for a missed duty. Keeps the night fair and organised.</p>
-    </div>
-    <div class="card">
-      <img src="img/cars.jpg" alt="Cars" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Cars and classes</h3>
-      <p>Hundreds of cars from the main makes, sorted into classes, in 1:32, 1:24 and 1:43. Home ships with the starter pack; Club can import the full catalogue.</p>
-    </div>
-    <div class="card">
-      <img src="img/calendar.jpg" alt="Calendar" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Club calendar</h3>
-      <p>Repeating club meetings and one-off events. The calendar keeps the season organised so everyone knows when the next race is.</p>
-    </div>
-    <div class="card">
-      <img src="img/home-results.jpg" alt="Results" style="width:100%;border-radius:8px;margin-bottom:10px">
-      <h3>Results on every phone</h3>
-      <p>Scan the QR on the race screen. Your personal report with graphs and class rules appears instantly. No app, no login. Race story shows where every driver stood after each heat.</p>
-    </div>
+    <div class="card"><img src="img/race control.png" alt="Race Control"><h3>Race Control</h3><p>Heat clock, running order with lap corrections, big Track call, race progress, live preview — everything to run the night from one screen.</p></div>
+    <div class="card"><img src="img/DS-01-step-03-club.png" alt="Live race screen"><h3>Live race screen</h3><p>The tower drivers and spectators see. Live order, laps, last and best, gaps, on-deck and lap records.</p></div>
+    <div class="card"><img src="img/PR-01-step-04-club.png" alt="Open practice"><h3>Open practice</h3><p>Each lane’s last lap, best lap and lap list on the big screen — club TV or any browser.</p></div>
+    <div class="card"><img src="img/QL-01-step-05-club.png" alt="Qualifying"><h3>Qualifying</h3><p>Single-car or multi-car qualifying with best lap counting and an on-deck list.</p></div>
+    <div class="card"><img src="img/RC-place-cars-after-resume.png" alt="Controlled restart"><h3>Controlled restart</h3><p>After a track call, place every car, tick each lane, then resume when the field is ready.</p></div>
+    <div class="card"><img src="img/home-review.jpg" alt="Heat review"><h3>Heat review</h3><p>Add or delete laps, strike false fastest laps, hand out penalties, then confirm.</p></div>
+    <div class="card"><img src="img/home-wizard.jpg" alt="Wizard"><h3>Wizard-driven setup</h3><p>Short steps with selection tiles. Next stays off until the step is complete.</p></div>
+    <div class="card"><img src="img/FS-01-step-04.png" alt="Get ready to race"><h3>Get ready to race</h3><p>Track, drivers, cars, first template — then start racing. Each step ticks itself when done.</p></div>
+    <div class="card"><img src="img/PH-01-step-07-home.png" alt="Phone race control"><h3>Race control on your phone</h3><p>Track call, resume, restart, end race, keep screen on — remote or full control surface.</p></div>
+    <div class="card"><img src="img/PH-02-step-01-club.png" alt="Phone check-in"><h3>Phone check-in and more</h3><p>Drivers scan the race screen QR. Officials open race screen, stream director or race control.</p></div>
+    <div class="card"><img src="img/championship-standings.jpg" alt="Championships"><h3>Championships</h3><p>Seasons with dropped rounds and seeding. Clear standings and per-driver reports.</p></div>
+    <div class="card"><img src="img/home-results.jpg" alt="Results on phone"><h3>Results on every phone</h3><p>Scan the QR. Personal report with graphs and class rules — no app, no login.</p></div>
   </div>
+  <p class="cta-row"><a href="screens.html">Screens &amp; streaming →</a></p>
 </section>
 
 <section id="autopilot" class="wrap">
   <h2>Auto Pilot — Race Director and Broadcast Director</h2>
   <div class="grid3">
-    <div class="card">
-      <h3>Race Director</h3>
-      <p>The breaks between heats run themselves so the organiser can race too. A click of yours always wins. Handles late joins, early leavers and the normal flow of a club night. Your input always overrides.</p>
-    </div>
-    <div class="card">
-      <h3>Broadcast Director</h3>
-      <p>Overlays and screens advance with the race on their own. The broadcast director can still take control at any moment. Perfect when you are streaming and racing at the same time. Changes reach the stream live.</p>
-    </div>
-    <div class="card">
-      <h3>Car test in a race</h3>
-      <p>During a Track call you can power one lane to try a car without disrupting the running order or the results. The rest of the field stays exactly where it was. Return cars to their markers and continue.</p>
-    </div>
+    <div class="card"><h3>Race Director</h3><p>Breaks between heats run themselves so the organiser can race too. Your click always wins. Handles late joins and early leavers.</p></div>
+    <div class="card"><h3>Broadcast Director</h3><p>Overlays and screens advance with the race; take control any time. Full Stream director detail lives in Broadcast Studio.</p></div>
+    <div class="card"><h3>Car test in a race</h3><p>During a Track call, power one lane to try a car without disrupting the order or results.</p></div>
   </div>
 </section>
 
 <section class="wrap">
-  <h2>Race screens and builders</h2>
-  <div class="grid3">
-    <div class="card">
-      <h3>Live race screens</h3>
-      <p>Block or List layouts on the TV. Live order, heat results between heats, and in Club a second screen with its own cards. Preset layouts include Tower and clock, Tower full, Race centre and Enduro tower plus strip. Any number of browsers can show the race screen at the same time.</p>
-    </div>
-    <div class="card">
-      <h3>Screen builder</h3>
-      <p>Build your own layouts. Drag, resize and arrange cards the way your club wants them. Screen Studio lets you run up to six live screens anywhere on the network that advance with the race by themselves.</p>
-    </div>
-    <div class="card">
-      <h3>Overlay builder</h3>
-      <p>Create custom stream overlays for OBS, Streamlabs, vMix and others. Live tower, stint results, race results and broadcast widgets. Corner, offset, size and opacity are set inside APEX. Broadcast Studio adds a separate director login and auto-progress.</p>
-    </div>
-  </div>
-</section>
-
-<section id="wizard" class="wrap">
   <h2>Wizard-driven everything</h2>
-  <div class="card">
-    <p>Every setup is a few short steps with selection tiles. Next stays off until the step is complete, and nothing starts blank. Quick race, championship, endurance, event — the wizard keeps it simple and consistent so you are racing in minutes, not fighting menus. The same pattern is used for drivers, cars, classes and race formats.</p>
-  </div>
+  <div class="card band"><p>Every setup is a few short steps with selection tiles. Next stays off until the step is complete, and nothing starts blank. Quick race, championship, endurance, event — racing in minutes, not fighting menus.</p></div>
 </section>
 
 <section class="wrap">
   <h2>Works on every phone and tablet</h2>
   <div class="grid3">
-    <div class="card"><h3>Results on your phone</h3><p>Scan a QR code. Your personal report with graphs and class rules. No app, no login, no account.</p></div>
-    <div class="card"><h3>Phone check-in</h3><p>Drivers scan the race screen QR, pick their name, class and car, and are ready. Club nights stay smooth even with late arrivals.</p></div>
-    <div class="card"><h3>Race screens anywhere</h3><p>The same live race screen runs on a TV, a laptop, a tablet or a phone. One layout for the club hall, another in your pocket.</p></div>
-    <div class="card"><h3>Voice call-outs</h3><p>Clear voice announcements of who’s next and key race events — never a driver’s name. Offline, male or female voice.</p></div>
+    <div class="card"><h3>Results on your phone</h3><p>Scan a QR code. Your personal report with graphs and class rules. No app, no login.</p></div>
+    <div class="card"><h3>Phone check-in</h3><p>Drivers scan the race screen QR, pick name, class and car. Smooth club nights with late arrivals.</p></div>
+    <div class="card"><h3>Race screens anywhere</h3><p>The same live race screen on a TV, laptop, tablet or phone.</p></div>
+    <div class="card"><h3>Voice call-outs</h3><p>Clear announcements of who’s next and key race events — never a driver’s name. Offline, male or female voice.</p></div>
   </div>
 </section>
 
 <section class="wrap">
   <h2>More that just works</h2>
   <div class="grid3">
-    <div class="card"><h3>Fair heats</h3><p>Rotations put every driver on every lane. Late drivers and early leavers are handled for you, and heats already run never change.</p></div>
+    <div class="card"><h3>Fair heats</h3><p>Rotations put every driver on every lane. Late drivers and early leavers are handled; heats already run never change.</p></div>
     <div class="card"><h3>Your hardware</h3><p>Works with the APEX lap counter, Trackmate, or an Arduino running Race Coordinator’s program. Same clock correction on all of them.</p></div>
     <div class="card"><h3>Import history</h3><p>Moving from Race Coordinator or TrackMate? Import your database or exports — drivers, races, results, rotations and the rest.</p></div>
   </div>
-  <p style="margin-top:24px;text-align:center"><a class="btn" href="pricing.html">See pricing</a></p>
+  <p class="cta-row" style="justify-content:center"><a class="btn" href="pricing.html">See pricing</a></p>
 </section>
 
 <section id="contact" class="wrap">
@@ -236,5 +127,7 @@
   <img src="img/logo.png" alt="" width="28" height="28"> APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br>
   <small>Trackmate, Race Coordinator, Scalextric, Carrera, Carrera GO!!!, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar, Betta, JK Products, Red Fox, Arduino, Raspberry Pi, Windows and Mac, and all other product names and trademarks, belong to their respective owners. APEX Race Control is not affiliated with or endorsed by them.</small>
 </footer>
+<script src="pricing.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Screens &amp; streaming · APEX Race Control</title>
+<meta name="description" content="Live race screens, phone results, and stream overlays for APEX Race Control.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
+  <nav class="nav-panel" id="nav-panel" data-nav-panel>
+    <a href="index.html">Home</a>
+    <a href="timing.html">Timing</a>
+    <a href="screens.html" class="is-active">Screens</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="pricing.html">Pricing</a>
+    <details class="nav-dd">
+      <summary>Add-ons</summary>
+      <div class="nav-dd-menu">
+        <span class="dd-label">Home</span>
+        <a href="add-ons/championship.html">Championship</a><a href="add-ons/endurance.html">Endurance</a><a href="add-ons/stream-overlay.html">Stream Overlay</a>
+        <span class="dd-label">Club</span>
+        <a href="add-ons/championship-plus.html">Championship Plus</a><a href="add-ons/endurance-plus.html">Endurance Plus</a><a href="add-ons/event-manager.html">Event Manager</a><a href="add-ons/event-manager-plus.html">Event Manager Plus</a><a href="add-ons/screen-studio.html">Screen Studio</a><a href="add-ons/broadcast-studio.html">Broadcast Studio</a><a href="add-ons/api.html">API</a><a href="add-ons/extra-track.html">Extra Track</a>
+      </div>
+    </details>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <span class="currency-switch" role="group" aria-label="Currency">
+      <button type="button" data-currency-btn="ZAR" aria-pressed="false">ZAR</button>
+      <button type="button" data-currency-btn="USD" aria-pressed="false">USD</button>
+    </span>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-panel">Menu</button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> · Screens</div>
+  <h1>Screens &amp; streaming</h1>
+  <p class="lede">How the hall and the stream look — race screens, phones, and overlays.</p>
+</div>
+<section class="wrap" style="padding-top:8px">
+  <h2>Race screens</h2>
+  <ul class="feature-cards">
+    <li><span class="tick" aria-hidden="true">✓</span><span>Live board: laps, last and best, gap, laps led, average, records, on deck, marshals</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Block or List layouts; Club second screen; Screen Studio up to six</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Between races: calendar, club image, QR codes</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Voice call-outs offline (male/female), never a driver’s name</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Any number of browsers can show the race screen at once</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>A library of ready-made formats, plus your own</span></li>
+  </ul>
+
+  <h2>Phones</h2>
+  <ul class="feature-cards">
+    <li><span class="tick" aria-hidden="true">✓</span><span>Drivers scan the race-screen QR: check-in and personal results — no app, no login</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Race Control on phone: Track call, resume, keep screen on</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Broadcast remote with <a href="add-ons/broadcast-studio.html">Broadcast Studio</a></span></li>
+  </ul>
+
+  <h2>Streaming</h2>
+  <ul class="feature-cards">
+    <li><span class="tick" aria-hidden="true">✓</span><span>Home <a href="add-ons/stream-overlay.html">Stream Overlay</a> / Club base: TV tower + results board into OBS and friends</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span><a href="add-ons/broadcast-studio.html">Broadcast Studio</a>: director, zones, sponsors, phone remote</span></li>
+  </ul>
+
+  <div class="shot-grid"><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/screens-broadcast/racing.jpg" data-caption="Race screen during a heat" aria-label="Enlarge: Race screen during a heat"><img src="screens/screens-broadcast/racing.jpg" alt="Race screen during a heat" loading="lazy"></button><figcaption>Race screen during a heat</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/screens-broadcast/results.jpg" data-caption="Results on the race screen" aria-label="Enlarge: Results on the race screen"><img src="screens/screens-broadcast/results.jpg" alt="Results on the race screen" loading="lazy"></button><figcaption>Results on the race screen</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/screens-broadcast/signin.jpg" data-caption="Sign-in QR" aria-label="Enlarge: Sign-in QR"><img src="screens/screens-broadcast/signin.jpg" alt="Sign-in QR" loading="lazy"></button><figcaption>Sign-in QR</figcaption></figure><figure class="shot shot--overlay"><button type="button" class="shot-frame" data-lightbox="screens/screens-broadcast/overlay-racing.jpg" data-caption="Stream overlay" aria-label="Enlarge: Stream overlay"><img src="screens/screens-broadcast/overlay-racing.jpg" alt="Stream overlay" loading="lazy"></button><figcaption>Stream overlay</figcaption></figure><figure class="shot shot--phone"><button type="button" class="shot-frame" data-lightbox="screens/screens-broadcast/broadcast-remote.jpg" data-caption="Broadcast remote" aria-label="Enlarge: Broadcast remote"><img src="screens/screens-broadcast/broadcast-remote.jpg" alt="Broadcast remote" loading="lazy"></button><figcaption>Broadcast remote</figcaption></figure></div>
+</section>
+
+<footer>
+  <img src="img/logo.png" alt="" width="28" height="28"> APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br>
+  <small>Trackmate, Race Coordinator, Scalextric, Carrera, Carrera GO!!!, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar, Betta, JK Products, Red Fox, Arduino, Raspberry Pi, Windows and Mac, and all other product names and trademarks, belong to their respective owners. APEX Race Control is not affiliated with or endorsed by them.</small>
+</footer>
+<script src="pricing.js" defer></script>
+<script src="site.js" defer></script>
+</body>
+</html>

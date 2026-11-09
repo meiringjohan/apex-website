@@ -4,25 +4,59 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Pricing · APEX Race Control</title>
+<meta name="description" content="Home is free. Club and add-on prices in US dollars and South African rand — prices only fund development.">
 <link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <a class="brand" href="/"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
-  <nav>
+  <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
+  <nav class="nav-panel" id="nav-panel" data-nav-panel>
     <a href="index.html">Home</a>
+    <a href="timing.html">Timing</a>
+    <a href="screens.html">Screens</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="pricing.html" class="is-active">Pricing</a>
+    <details class="nav-dd">
+      <summary>Add-ons</summary>
+      <div class="nav-dd-menu">
+        <span class="dd-label">Home</span>
+        <a href="add-ons/championship.html">Championship</a><a href="add-ons/endurance.html">Endurance</a><a href="add-ons/stream-overlay.html">Stream Overlay</a>
+        <span class="dd-label">Club</span>
+        <a href="add-ons/championship-plus.html">Championship Plus</a><a href="add-ons/endurance-plus.html">Endurance Plus</a><a href="add-ons/event-manager.html">Event Manager</a><a href="add-ons/event-manager-plus.html">Event Manager Plus</a><a href="add-ons/screen-studio.html">Screen Studio</a><a href="add-ons/broadcast-studio.html">Broadcast Studio</a><a href="add-ons/api.html">API</a><a href="add-ons/extra-track.html">Extra Track</a>
+      </div>
+    </details>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
   </nav>
+  <div class="nav-end">
+    <span class="currency-switch" role="group" aria-label="Currency">
+      <button type="button" data-currency-btn="ZAR" aria-pressed="false">ZAR</button>
+      <button type="button" data-currency-btn="USD" aria-pressed="false">USD</button>
+    </span>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-panel">Menu</button>
+  </div>
 </header>
 
 <section class="wrap">
-  <h2>Pricing</h2>
-  <p>APEX is a contribution to the slot car community. <b>Home is free</b>, and the prices below only fund development, fixes and updates. All prices are in South African rand.</p>
+  <div class="pricing-head">
+    <h2>Pricing</h2>
+    <span class="currency-switch currency-switch-page" role="group" aria-label="Currency">
+      <button type="button" data-currency-btn="ZAR" aria-pressed="false">ZAR</button>
+      <button type="button" data-currency-btn="USD" aria-pressed="false">USD</button>
+    </span>
+  </div>
+  <p>APEX is a contribution to the slot car community. <b>Home is free</b>, and the prices below only fund development, fixes and updates. All prices are in <span data-currency-label>US dollars</span>.</p>
+  <p id="fx-note" class="fx-note" hidden></p>
 
   <div class="grid3" style="margin:24px 0">
-    <div class="card"><h3>Home</h3><p style="font-size:28px;color:#8dc63f;margin:8px 0">Free</p><p>No cost, no time limit. Race at home on one track with 2 to 4 lanes.</p></div>
-    <div class="card"><h3>Club</h3><p style="font-size:28px;color:#8dc63f;margin:8px 0">R825</p><p>Once off · pay once, keep it. Everything a club night needs, with Home’s three add-ons included. 30-day free trial.</p></div>
+    <div class="card"><h3>Home</h3><p class="price-lg" data-price="home_base">Free</p><p>No cost, no time limit. Race at home on one track with 2 to 4 lanes.</p></div>
+    <div class="card"><h3>Club</h3><p class="price-lg"><span data-price="club_base">$50</span></p><p>Once off · pay once, keep it. Everything a club night needs, with Home’s three add-ons included. 30-day free trial.</p></div>
   </div>
+  <p class="muted" data-price-html="Add Championship, Endurance or Stream Overlay for {home_championship} a year each, or all three for {home_complete}."></p>
 
   <h3 style="margin-top:40px">What’s included</h3>
   <table class="cmp">
@@ -47,11 +81,23 @@
   <table class="cmp">
     <thead><tr><th>Home</th><th>1 year</th><th>2 years (15% off)</th><th>3 years (25% off)</th></tr></thead>
     <tbody>
-      <tr><td>Home base</td><td>Free</td><td></td><td></td></tr>
-      <tr><td>Championship</td><td>R85 / year</td><td>R145 (R75/yr)<br><small>SAVE R25</small></td><td>R190 (R65/yr)<br><small>SAVE R65</small></td></tr>
-      <tr><td>Endurance</td><td>R85 / year</td><td>R145 (R75/yr)<br><small>SAVE R25</small></td><td>R190 (R65/yr)<br><small>SAVE R65</small></td></tr>
-      <tr><td>Stream Overlay</td><td>R85 / year</td><td>R145 (R75/yr)<br><small>SAVE R25</small></td><td>R190 (R65/yr)<br><small>SAVE R65</small></td></tr>
-      <tr><td>Home Complete</td><td>R200 / year</td><td>R340 (R170/yr)<br><small>SAVE R60</small></td><td>R450 (R150/yr)<br><small>SAVE R150</small></td></tr>
+      <tr><td>Home base</td><td data-price="home_base">Free</td><td></td><td></td></tr>
+      <tr><td><a href="add-ons/championship.html">Championship</a></td>
+        <td><span data-price="home_championship">$5</span> / year</td>
+        <td><span data-price="home_championship" data-term="2y">$8.50</span> (<span data-price="home_championship" data-term="2y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="home_championship" data-years="2"></small></td>
+        <td><span data-price="home_championship" data-term="3y">$11.25</span> (<span data-price="home_championship" data-term="3y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="home_championship" data-years="3"></small></td></tr>
+      <tr><td><a href="add-ons/endurance.html">Endurance</a></td>
+        <td><span data-price="home_endurance">$5</span> / year</td>
+        <td><span data-price="home_endurance" data-term="2y"></span> (<span data-price="home_endurance" data-term="2y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="home_endurance" data-years="2"></small></td>
+        <td><span data-price="home_endurance" data-term="3y"></span> (<span data-price="home_endurance" data-term="3y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="home_endurance" data-years="3"></small></td></tr>
+      <tr><td><a href="add-ons/stream-overlay.html">Stream Overlay</a></td>
+        <td><span data-price="home_stream_overlay">$5</span> / year</td>
+        <td><span data-price="home_stream_overlay" data-term="2y"></span> (<span data-price="home_stream_overlay" data-term="2y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="home_stream_overlay" data-years="2"></small></td>
+        <td><span data-price="home_stream_overlay" data-term="3y"></span> (<span data-price="home_stream_overlay" data-term="3y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="home_stream_overlay" data-years="3"></small></td></tr>
+      <tr><td>Home Complete</td>
+        <td><span data-price="home_complete">$12</span> / year</td>
+        <td><span data-price="home_complete" data-term="2y"></span> (<span data-price="home_complete" data-term="2y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="home_complete" data-years="2"></small></td>
+        <td><span data-price="home_complete" data-term="3y"></span> (<span data-price="home_complete" data-term="3y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="home_complete" data-years="3"></small></td></tr>
     </tbody>
   </table>
 
@@ -59,24 +105,24 @@
   <div class="grid3">
     <div class="card">
       <h3>Home add-ons</h3>
-      <p><b>Championship</b> — seasons with dropped rounds and seeding.<br>
-      <b>Endurance</b> — team or single-driver enduros with stints, pits and lane changes.<br>
-      <b>Stream Overlay</b> — live tower and results overlays for OBS and other tools.<br>
+      <p><b><a href="add-ons/championship.html">Championship</a></b> — seasons with dropped rounds and seeding.<br>
+      <b><a href="add-ons/endurance.html">Endurance</a></b> — team or single-driver enduros with stints, pits and lane changes.<br>
+      <b><a href="add-ons/stream-overlay.html">Stream Overlay</a></b> — live tower and results overlays for OBS and other tools.<br>
       <b>Home Complete</b> — all three together.</p>
     </div>
     <div class="card">
       <h3>Club add-ons</h3>
-      <p><b>Championship Plus</b> — full seasons, seeding, dropped rounds, multi-day carry-over.<br>
-      <b>Endurance Plus</b> — endurance with stints, pit windows, lane changes, full course yellow.<br>
-      <b>Event Manager</b> — one-day events with imported drivers and results.<br>
-      <b>Event Manager Plus</b> — multi-day meetings with carry-over to the finals.</p>
+      <p><b><a href="add-ons/championship-plus.html">Championship Plus</a></b> — full seasons, seeding, dropped rounds; works with multi-day meetings.<br>
+      <b><a href="add-ons/endurance-plus.html">Endurance Plus</a></b> — stints, pit windows, lane changes, fuel, tyres and team phones.<br>
+      <b><a href="add-ons/event-manager.html">Event Manager</a></b> — one-day events with imported drivers and results.<br>
+      <b><a href="add-ons/event-manager-plus.html">Event Manager Plus</a></b> — multi-day meetings with carry-over to the finals.</p>
     </div>
     <div class="card">
       <h3>Club add-ons (cont.)</h3>
-      <p><b>Screen Studio</b> — up to six live screens anywhere on the network that advance with the race.<br>
-      <b>Broadcast Studio</b> — separate broadcast director login, auto-progress overlays, stream remote.<br>
-      <b>API</b> — Excel and JSON exports, plus external integration.<br>
-      <b>Extra Track</b> — run more than one track on the same computer.</p>
+      <p><b><a href="add-ons/screen-studio.html">Screen Studio</a></b> — up to six live screens on the network.<br>
+      <b><a href="add-ons/broadcast-studio.html">Broadcast Studio</a></b> — stream director, custom overlays, phone remote.<br>
+      <b><a href="add-ons/api.html">API</a></b> — Excel and JSON exports, plus external integration.<br>
+      <b><a href="add-ons/extra-track.html">Extra Track</a></b> — run more than one track on the same computer.</p>
     </div>
   </div>
 
@@ -84,15 +130,39 @@
   <table class="cmp">
     <thead><tr><th>Club</th><th>1 year</th><th>2 years (15% off)</th><th>3 years (25% off)</th></tr></thead>
     <tbody>
-      <tr><td>Club base<br><small>30-day free trial</small></td><td>R825 once-off</td><td></td><td></td></tr>
-      <tr><td>Championship Plus</td><td>R415 / year</td><td>R705 (R355/yr)</td><td>R935 (R310/yr)</td></tr>
-      <tr><td>Endurance Plus</td><td>R415 / year</td><td>R705 (R355/yr)</td><td>R935 (R310/yr)</td></tr>
-      <tr><td>Event Manager</td><td>R415 / year</td><td>R705 (R355/yr)</td><td>R935 (R310/yr)</td></tr>
-      <tr><td>Event Manager Plus</td><td>R660 / year</td><td>R1 120 (R560/yr)</td><td>R1 485 (R495/yr)</td></tr>
-      <tr><td>Screen Studio</td><td>R415 / year</td><td>R705 (R355/yr)</td><td>R935 (R310/yr)</td></tr>
-      <tr><td>API</td><td>R415 / year</td><td>R705 (R355/yr)</td><td>R935 (R310/yr)</td></tr>
-      <tr><td>Broadcast Studio</td><td>R825 / year</td><td>R1 405 (R705/yr)</td><td>R1 855 (R620/yr)</td></tr>
-      <tr><td>Extra Track</td><td>R165 / year</td><td>R280 (R140/yr)</td><td>R370 (R125/yr)</td></tr>
+      <tr><td>Club base<br><small>30-day free trial</small></td><td><span data-price="club_base"></span> once-off</td><td></td><td></td></tr>
+      <tr><td><a href="add-ons/championship-plus.html">Championship Plus</a></td>
+        <td><span data-price="championship_plus"></span> / year</td>
+        <td><span data-price="championship_plus" data-term="2y"></span> (<span data-price="championship_plus" data-term="2y" data-mode="per_year"></span>)</td>
+        <td><span data-price="championship_plus" data-term="3y"></span> (<span data-price="championship_plus" data-term="3y" data-mode="per_year"></span>)</td></tr>
+      <tr><td><a href="add-ons/endurance-plus.html">Endurance Plus</a></td>
+        <td><span data-price="endurance_plus"></span> / year</td>
+        <td><span data-price="endurance_plus" data-term="2y"></span> (<span data-price="endurance_plus" data-term="2y" data-mode="per_year"></span>)</td>
+        <td><span data-price="endurance_plus" data-term="3y"></span> (<span data-price="endurance_plus" data-term="3y" data-mode="per_year"></span>)</td></tr>
+      <tr><td><a href="add-ons/event-manager.html">Event Manager</a></td>
+        <td><span data-price="event_manager"></span> / year</td>
+        <td><span data-price="event_manager" data-term="2y"></span> (<span data-price="event_manager" data-term="2y" data-mode="per_year"></span>)</td>
+        <td><span data-price="event_manager" data-term="3y"></span> (<span data-price="event_manager" data-term="3y" data-mode="per_year"></span>)</td></tr>
+      <tr><td><a href="add-ons/event-manager-plus.html">Event Manager Plus</a></td>
+        <td><span data-price="event_manager_plus"></span> / year</td>
+        <td><span data-price="event_manager_plus" data-term="2y"></span> (<span data-price="event_manager_plus" data-term="2y" data-mode="per_year"></span>)</td>
+        <td><span data-price="event_manager_plus" data-term="3y"></span> (<span data-price="event_manager_plus" data-term="3y" data-mode="per_year"></span>)</td></tr>
+      <tr><td><a href="add-ons/screen-studio.html">Screen Studio</a></td>
+        <td><span data-price="screen_studio"></span> / year</td>
+        <td><span data-price="screen_studio" data-term="2y"></span> (<span data-price="screen_studio" data-term="2y" data-mode="per_year"></span>)</td>
+        <td><span data-price="screen_studio" data-term="3y"></span> (<span data-price="screen_studio" data-term="3y" data-mode="per_year"></span>)</td></tr>
+      <tr><td><a href="add-ons/api.html">API</a></td>
+        <td><span data-price="api"></span> / year</td>
+        <td><span data-price="api" data-term="2y"></span> (<span data-price="api" data-term="2y" data-mode="per_year"></span>)</td>
+        <td><span data-price="api" data-term="3y"></span> (<span data-price="api" data-term="3y" data-mode="per_year"></span>)</td></tr>
+      <tr><td><a href="add-ons/broadcast-studio.html">Broadcast Studio</a></td>
+        <td><span data-price="broadcast_studio"></span> / year</td>
+        <td><span data-price="broadcast_studio" data-term="2y"></span> (<span data-price="broadcast_studio" data-term="2y" data-mode="per_year"></span>)</td>
+        <td><span data-price="broadcast_studio" data-term="3y"></span> (<span data-price="broadcast_studio" data-term="3y" data-mode="per_year"></span>)</td></tr>
+      <tr><td><a href="add-ons/extra-track.html">Extra Track</a></td>
+        <td><span data-price="extra_track"></span> / year</td>
+        <td><span data-price="extra_track" data-term="2y"></span> (<span data-price="extra_track" data-term="2y" data-mode="per_year"></span>)</td>
+        <td><span data-price="extra_track" data-term="3y"></span> (<span data-price="extra_track" data-term="3y" data-mode="per_year"></span>)</td></tr>
     </tbody>
   </table>
 
@@ -101,16 +171,27 @@
   <table class="cmp">
     <thead><tr><th>Bundle</th><th>1 year</th><th>2 years (15% off)</th><th>3 years (25% off)</th></tr></thead>
     <tbody>
-      <tr><td>Race Club<br><small>Championship Plus, Endurance Plus, Event Manager</small></td><td>R1 055 / year<br><small>separately R1 245</small></td><td>R1 795 (R900/yr)<br><small>SAVE R315</small></td><td>R2 375 (R790/yr)<br><small>SAVE R790</small></td></tr>
-      <tr><td>Broadcast<br><small>Broadcast Studio, Screen Studio</small></td><td>R1 055 / year<br><small>separately R1 249</small></td><td>R1 795 (R900/yr)<br><small>SAVE R315</small></td><td>R2 375 (R790/yr)<br><small>SAVE R790</small></td></tr>
-      <tr><td>Complete<br><small>Championship Plus, Endurance Plus, Event Manager Plus, Broadcast Studio, Screen Studio, API</small></td><td>R2 675 / year<br><small>separately R3 145</small></td><td>R4 550 (R2 275/yr)<br><small>SAVE R800</small></td><td>R6 020 (R2 005/yr)<br><small>SAVE R2 005</small></td></tr>
+      <tr><td>Race Club<br><small>Championship Plus, Endurance Plus, Event Manager</small></td>
+        <td><span data-price="bundle_race_club"></span> / year<br><small>separately <span data-separately="bundle_race_club"></span></small></td>
+        <td><span data-price="bundle_race_club" data-term="2y"></span> (<span data-price="bundle_race_club" data-term="2y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="bundle_race_club" data-years="2"></small></td>
+        <td><span data-price="bundle_race_club" data-term="3y"></span> (<span data-price="bundle_race_club" data-term="3y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="bundle_race_club" data-years="3"></small></td></tr>
+      <tr><td>Broadcast<br><small>Broadcast Studio, Screen Studio</small></td>
+        <td><span data-price="bundle_broadcast"></span> / year<br><small>separately <span data-separately="bundle_broadcast"></span></small></td>
+        <td><span data-price="bundle_broadcast" data-term="2y"></span> (<span data-price="bundle_broadcast" data-term="2y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="bundle_broadcast" data-years="2"></small></td>
+        <td><span data-price="bundle_broadcast" data-term="3y"></span> (<span data-price="bundle_broadcast" data-term="3y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="bundle_broadcast" data-years="3"></small></td></tr>
+      <tr><td>Complete<br><small>Championship Plus, Endurance Plus, Event Manager Plus, Broadcast Studio, Screen Studio, API</small></td>
+        <td><span data-price="bundle_complete"></span> / year<br><small>separately <span data-separately="bundle_complete"></span></small></td>
+        <td><span data-price="bundle_complete" data-term="2y"></span> (<span data-price="bundle_complete" data-term="2y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="bundle_complete" data-years="2"></small></td>
+        <td><span data-price="bundle_complete" data-term="3y"></span> (<span data-price="bundle_complete" data-term="3y" data-mode="per_year"></span>)<br><small class="save-line" data-pack="bundle_complete" data-years="3"></small></td></tr>
     </tbody>
   </table>
 
   <div class="card" style="margin-top:24px">
     <h3>Best value: a bundle for 3 years</h3>
     <p>Compared with buying the same add-ons one by one, every year, for three years:</p>
-    <p>Race Club: save R1 360 (36%) &nbsp;·&nbsp; Broadcast: save R1 345 (36%) &nbsp;·&nbsp; Complete: save R3 415 (36%)</p>
+    <p>Race Club: save <span class="best-save" data-bundle="bundle_race_club"></span>
+      &nbsp;·&nbsp; Broadcast: save <span class="best-save" data-bundle="bundle_broadcast"></span>
+      &nbsp;·&nbsp; Complete: save <span class="best-save" data-bundle="bundle_complete"></span></p>
   </div>
 
   <h3 style="margin-top:40px">Good to know</h3>
@@ -118,16 +199,17 @@
     <div class="card"><h3>Club trial</h3><p>Covers the Club base only. Add-ons are not part of the 30-day trial.</p></div>
     <div class="card"><h3>Home limits</h3><p>Home allows up to 6 drivers racing at once, and up to 12 in an Endurance race. Club has no driver limit.</p></div>
     <div class="card"><h3>Hardware</h3><p>Club needs a Pi 4 or 5, a PC or a Mac. Pi 3 runs Home only. Mac is Apple Silicon.</p></div>
-    <div class="card"><h3>Languages</h3><p>English, Spanish and Italian on screen, phones and voice call-outs.</p></div>
+    <div class="card"><h3>Languages</h3><p>English, Spanish and Italian on screen, phones and voice call-outs. This website is English only.</p></div>
     <div class="card"><h3>Licence</h3><p>Per computer and per track. Key checked offline. Gentle expiry with grace period.</p></div>
     <div class="card"><h3>No hardware included</h3><p>APEX is software. You bring the computer, screen and a supported lap counter.</p></div>
   </div>
 </section>
 
 <footer>
-  <a href="index.html">← Back to teaser</a><br>
-  APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br>
+  <img src="img/logo.png" alt="" width="28" height="28"> APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br>
   <small>Trackmate, Race Coordinator, Scalextric, Carrera, Carrera GO!!!, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar, Betta, JK Products, Red Fox, Arduino, Raspberry Pi, Windows and Mac, and all other product names and trademarks, belong to their respective owners. APEX Race Control is not affiliated with or endorsed by them.</small>
 </footer>
+<script src="pricing.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>

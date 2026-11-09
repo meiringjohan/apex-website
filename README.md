@@ -1,39 +1,53 @@
-# APEX Slotcar Systems website
+# APEX website (Soft Modern preview)
 
-The public website for APEX Slotcar Systems and APEX Race Control, at
-**https://apexslotcarsystems.co.za**.
+**Status:** local preview only. Not pushed to `meiringjohan/apex-website`. Live site unchanged until Johan gives the go.
 
-It's a plain static site: one HTML page and one stylesheet, with no build step and no framework.
+Design: Option 3 Soft Modern (soft bento). Hero car art is a simple placeholder drawing (not shown as a caption on the page — see SCREENSHOTS.md). — pastel wash, pill nav, rounded cards, purple/green type, light split hero (no big splash banner).
 
-## How it's served
+## Pages (18)
 
-- GitHub Pages publishes this repository's `main` branch from the root folder.
-- `CNAME` holds the custom domain. Don't edit or remove it, or the domain stops working.
-- `.nojekyll` turns Jekyll off, so files are served exactly as they are. This README isn't turned
-  into a page, but it can be opened as a plain file at `/README.md`, so keep it free of anything
-  private.
+| File | Role |
+|------|------|
+| `index.html` | Home |
+| `timing.html` | How timing works |
+| `pricing.html` | Editions & pricing (URL kept) |
+| `hardware.html` | Hardware & lap counters |
+| `screens.html` | Screens & streaming |
+| `faq.html` | FAQ |
+| `contact.html` | Contact + Keep me posted |
+| `add-ons/*.html` | 11 add-on detail pages |
 
-## Folders
+## Edit prices (no build step)
 
-| Path | What it is |
-| --- | --- |
-| `index.html` | The home page (the whole site) |
-| `style.css` | All styles |
-| `fonts/` | Web fonts used by the page |
-| `img/` | Logo, favicon and splash image |
-| `assets/` | Files offered for download (brochure, launch image) |
-| `CNAME` | Custom domain for GitHub Pages |
-| `.nojekyll` | Tells GitHub Pages not to run Jekyll |
+1. Open `pricing-data.json`.
+2. Change a product’s `usd` (and `usd_2y` / `usd_3y` for multi-year totals).
+3. Change `usd_to_zar` when the exchange rate moves (e.g. `16.5`).
+4. Save. Refresh the pricing page.
 
-## Editing and publishing
+**Rand formula (in the browser):** `ZAR = ceil(usd × usd_to_zar / 5) × 5` — always rounds **up** to the nearest R5.
 
-1. Edit the files and open `index.html` in a browser to check the result.
-2. Commit to `main` and push. GitHub Pages republishes the site within a few minutes.
-3. Hard-refresh the browser if the old version still shows.
+Bundle “separately” figures and best-value savings are **computed** from each bundle’s `includes` list — do not hard-code Rand or Dollar amounts in the HTML.
 
-## Rules for this repository
+Currency default: `localStorage['apex-currency']` wins; else ZAR if timezone is `Africa/Johannesburg` or any `navigator.languages` entry contains `-ZA`; else USD. Toggle always visible in the nav (and on the pricing page). No IP API.
 
-- It's **public**: everything here, including its history, is visible to everyone.
-- No personal data (email addresses, mailing lists, names), passwords, keys or tokens.
-- No real event, club, venue or third-party brand names in site text unless they're needed and
-  carry a trademark notice.
+See also `PRICING-DATA.md`.
+
+## Screenshots
+
+App captures under `screens/`. See `SCREENSHOTS.md` for capture dates and the list to re-shoot after the UI freeze.
+
+## Keep me posted / contact
+
+Same behaviour as today’s live site: `mailto:info@apexslotcarsystems.co.za` with the Keep me posted subject and privacy line. No third-party form.
+
+## Local preview
+
+```bash
+cd /workspace/site-build-soft
+python3 -m http.server 8765
+# open http://127.0.0.1:8765/
+```
+
+## Hosting
+
+Static files for GitHub Pages. English only. `.nojekyll` and `CNAME` preserved from the live repo.

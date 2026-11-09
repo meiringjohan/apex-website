@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Championship Plus · APEX Race Control</title>
+<meta name="description" content="Club Championship Plus: seasons, seeding, scheduling ahead, scrutineering and Excel/JSON export.">
+<link rel="icon" href="../img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="../index.html"><img src="../img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
+  <nav class="nav-panel" id="nav-panel" data-nav-panel>
+    <a href="../index.html">Home</a>
+    <a href="../timing.html">Timing</a>
+    <a href="../screens.html">Screens</a>
+    <a href="../hardware.html">Hardware</a>
+    <a href="../pricing.html">Pricing</a>
+    <details class="nav-dd">
+      <summary>Add-ons</summary>
+      <div class="nav-dd-menu">
+        <span class="dd-label">Home</span>
+        <a href="../add-ons/championship.html">Championship</a><a href="../add-ons/endurance.html">Endurance</a><a href="../add-ons/stream-overlay.html">Stream Overlay</a>
+        <span class="dd-label">Club</span>
+        <a href="../add-ons/championship-plus.html">Championship Plus</a><a href="../add-ons/endurance-plus.html">Endurance Plus</a><a href="../add-ons/event-manager.html">Event Manager</a><a href="../add-ons/event-manager-plus.html">Event Manager Plus</a><a href="../add-ons/screen-studio.html">Screen Studio</a><a href="../add-ons/broadcast-studio.html">Broadcast Studio</a><a href="../add-ons/api.html">API</a><a href="../add-ons/extra-track.html">Extra Track</a>
+      </div>
+    </details>
+    <a href="../faq.html">FAQ</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <span class="currency-switch" role="group" aria-label="Currency">
+      <button type="button" data-currency-btn="ZAR" aria-pressed="false">ZAR</button>
+      <button type="button" data-currency-btn="USD" aria-pressed="false">USD</button>
+    </span>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-panel">Menu</button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="../index.html">Home</a> · <a href="../pricing.html">Pricing</a> · Championship Plus</div>
+  <h1>Championship Plus</h1>
+  <p class="lede"><span class="flag">Club</span> · <span data-price="championship_plus"></span> / year (see <a href="../pricing.html">Pricing</a> for multi-year)</p>
+</div>
+<section class="wrap" style="padding-top:8px">
+  <div class="prose"><p>Everything in Championship, built for a club night calendar: schedule rounds weeks ahead, seed from saved lists, scrutineer with a phone link, and export results.</p></div>
+  <div class="who"><b>Who it’s for.</b> Clubs that run a full season with seeding, dropped rounds, ahead-of-time scheduling and export.</div>
+  <h2>Features</h2>
+  <ul class="feature-cards"><li><span class="tick" aria-hidden="true">✓</span><span>Full seasons with dropped rounds and seeding (including saved seeding lists)</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Points, total laps or average-lap schemes; visiting-winner bonus; club championship</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Scheduling ahead — races and rounds saved as Ready until they start</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Scrutineering with phone link for a named scrutineer; decision log</span></li><li><span class="tick" aria-hidden="true">✓</span><span>Excel / CSV / tab / plain text / JSON export of one race or a date range</span></li></ul>
+  <p class="muted">Works with multi-day meetings. Carry-over rules between sessions live in <a href="event-manager-plus.html">Event Manager Plus</a>.</p>
+  <h2>Screenshots</h2>
+  <div class="shot-grid"><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="../screens/championship-plus/setup.jpg" data-caption="Championship setup (Club)" aria-label="Enlarge: Championship setup (Club)"><img src="../screens/championship-plus/setup.jpg" alt="Championship setup (Club)" loading="lazy"></button><figcaption>Championship setup (Club)</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="../screens/championship-plus/seeding.jpg" data-caption="Seeding" aria-label="Enlarge: Seeding"><img src="../screens/championship-plus/seeding.jpg" alt="Seeding" loading="lazy"></button><figcaption>Seeding</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="../screens/championship-plus/rounds.jpg" data-caption="Rounds" aria-label="Enlarge: Rounds"><img src="../screens/championship-plus/rounds.jpg" alt="Rounds" loading="lazy"></button><figcaption>Rounds</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="../screens/championship-plus/standings.jpg" data-caption="Standings" aria-label="Enlarge: Standings"><img src="../screens/championship-plus/standings.jpg" alt="Standings" loading="lazy"></button><figcaption>Standings</figcaption></figure></div>
+  <p class="cta-row"><a class="btn" href="../pricing.html">Back to pricing</a></p>
+</section>
+
+<footer>
+  <img src="../img/logo.png" alt="" width="28" height="28"> APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br>
+  <small>Trackmate, Race Coordinator, Scalextric, Carrera, Carrera GO!!!, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar, Betta, JK Products, Red Fox, Arduino, Raspberry Pi, Windows and Mac, and all other product names and trademarks, belong to their respective owners. APEX Race Control is not affiliated with or endorsed by them.</small>
+</footer>
+<script src="../pricing.js" defer></script>
+<script src="../site.js" defer></script>
+</body>
+</html>

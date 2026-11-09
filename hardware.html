@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hardware &amp; lap counters · APEX Race Control</title>
+<meta name="description" content="Supported lap counters and computers for APEX Race Control — APEX, Trackmate, Race Coordinator Arduino, Pi, PC and Mac.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="36" height="36"><span>APEX <b>Race Control</b></span></a>
+  <nav class="nav-panel" id="nav-panel" data-nav-panel>
+    <a href="index.html">Home</a>
+    <a href="timing.html">Timing</a>
+    <a href="screens.html">Screens</a>
+    <a href="hardware.html" class="is-active">Hardware</a>
+    <a href="pricing.html">Pricing</a>
+    <details class="nav-dd">
+      <summary>Add-ons</summary>
+      <div class="nav-dd-menu">
+        <span class="dd-label">Home</span>
+        <a href="add-ons/championship.html">Championship</a><a href="add-ons/endurance.html">Endurance</a><a href="add-ons/stream-overlay.html">Stream Overlay</a>
+        <span class="dd-label">Club</span>
+        <a href="add-ons/championship-plus.html">Championship Plus</a><a href="add-ons/endurance-plus.html">Endurance Plus</a><a href="add-ons/event-manager.html">Event Manager</a><a href="add-ons/event-manager-plus.html">Event Manager Plus</a><a href="add-ons/screen-studio.html">Screen Studio</a><a href="add-ons/broadcast-studio.html">Broadcast Studio</a><a href="add-ons/api.html">API</a><a href="add-ons/extra-track.html">Extra Track</a>
+      </div>
+    </details>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <span class="currency-switch" role="group" aria-label="Currency">
+      <button type="button" data-currency-btn="ZAR" aria-pressed="false">ZAR</button>
+      <button type="button" data-currency-btn="USD" aria-pressed="false">USD</button>
+    </span>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-panel">Menu</button>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> · Hardware</div>
+  <h1>Hardware &amp; lap counters</h1>
+  <p class="lede">APEX is software. You bring the computer, the screen and a supported lap counter. Timing correction works on every supported board.</p>
+</div>
+<section class="wrap" style="padding-top:8px">
+  <h2>Supported lap counters</h2>
+  <table class="cmp">
+    <thead><tr><th>Lap counter</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td><b>APEX lap counter 3.0</b></td><td>Arduino Uno; hardware interrupt timestamps; 6 lanes + 5 start lights, or 8 lanes + 1; app loads the program over USB</td></tr>
+      <tr><td><b>Trackmate</b></td><td>Red, black and blue interfaces</td></tr>
+      <tr><td><b>Race Coordinator Arduino</b></td><td>Uno, Nano or Mega; club’s own pin wiring</td></tr>
+    </tbody>
+  </table>
+  <p><a href="timing.html">How timing works →</a></p>
+
+  <h2>Computers</h2>
+  <table class="cmp">
+    <thead><tr><th>Edition</th><th>Runs on</th></tr></thead>
+    <tbody>
+      <tr><td>Home</td><td>Raspberry Pi 3B+, 4, 5 · Windows PC · Mac (Apple Silicon)</td></tr>
+      <tr><td>Club</td><td>Raspberry Pi 4 or 5 · Windows PC · Mac (Apple Silicon). Pi 3 stays Home even with a Club key</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">APEX image for Raspberry Pi Imager starts straight into APEX. Windows and Mac builds are for testing ahead of the February 2027 launch — production downloads will be announced then.</p>
+
+  <h2>What the track can include</h2>
+  <ul class="feature-cards">
+    <li><span class="tick" aria-hidden="true">✓</span><span>2 to 8 lanes (odd counts included), each with name and colour</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Start lights (five-light gantry or single light + buzzer)</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Power relay per lane or one for the track</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Track call buttons</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Infrared, dead strip or reed sensors</span></li>
+    <li><span class="tick" aria-hidden="true">✓</span><span>Hardware workshop: output test, live monitor, simulator</span></li>
+  </ul>
+
+  <div class="shot-grid"><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/hardware/hardware.jpg" data-caption="Hardware" aria-label="Enlarge: Hardware"><img src="screens/hardware/hardware.jpg" alt="Hardware" loading="lazy"></button><figcaption>Hardware</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/hardware/setup.jpg" data-caption="Track hardware setup" aria-label="Enlarge: Track hardware setup"><img src="screens/hardware/setup.jpg" alt="Track hardware setup" loading="lazy"></button><figcaption>Track hardware setup</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/hardware/arduino.jpg" data-caption="Arduino" aria-label="Enlarge: Arduino"><img src="screens/hardware/arduino.jpg" alt="Arduino" loading="lazy"></button><figcaption>Arduino</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/hardware/trackmate.jpg" data-caption="Trackmate" aria-label="Enlarge: Trackmate"><img src="screens/hardware/trackmate.jpg" alt="Trackmate" loading="lazy"></button><figcaption>Trackmate</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/hardware/wiring-6.jpg" data-caption="Wiring — 6 lanes" aria-label="Enlarge: Wiring — 6 lanes"><img src="screens/hardware/wiring-6.jpg" alt="Wiring — 6 lanes" loading="lazy"></button><figcaption>Wiring — 6 lanes</figcaption></figure><figure class="shot shot--wide"><button type="button" class="shot-frame" data-lightbox="screens/hardware/wiring-8.jpg" data-caption="Wiring — 8 lanes" aria-label="Enlarge: Wiring — 8 lanes"><img src="screens/hardware/wiring-8.jpg" alt="Wiring — 8 lanes" loading="lazy"></button><figcaption>Wiring — 8 lanes</figcaption></figure></div>
+</section>
+
+<footer>
+  <img src="img/logo.png" alt="" width="28" height="28"> APEX Race Control · Home and Club editions · © 2026 APEX Slotcar Systems<br>
+  <small>Trackmate, Race Coordinator, Scalextric, Carrera, Carrera GO!!!, Slot.it, Ninco, Scaleauto, NSR, Sideways, Revoslot, MR Slotcar, Betta, JK Products, Red Fox, Arduino, Raspberry Pi, Windows and Mac, and all other product names and trademarks, belong to their respective owners. APEX Race Control is not affiliated with or endorsed by them.</small>
+</footer>
+<script src="pricing.js" defer></script>
+<script src="site.js" defer></script>
+</body>
+</html>
