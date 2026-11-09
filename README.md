@@ -2,7 +2,7 @@
 
 **Status:** local preview only. Not pushed to `meiringjohan/apex-website`. Live site unchanged until Johan gives the go.
 
-Design: Option 3 Soft Modern (soft bento). Hero car art is a simple placeholder drawing (not shown as a caption on the page — see SCREENSHOTS.md). — pastel wash, pill nav, rounded cards, purple/green type, light split hero (no big splash banner).
+Design: Option 3 Soft Modern (soft bento). Home hero shows the APEX logo badge. — pastel wash, pill nav, rounded cards, purple/green type, light split hero (no big splash banner).
 
 ## Pages (18)
 

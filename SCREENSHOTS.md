@@ -13,7 +13,7 @@ Shipped with current real app captures (guide + handoff + docs/img + live site i
 | Stream Overlay / Broadcast | `screens/stream-overlay/*`, `screens/broadcast-studio/*` | Handoff Oct–Nov 2026 | Yes — director, gallery, phone remote |
 | Screen Studio | `screens/screen-studio/*` | DS-01 / RS-01 / docs-plan | Yes |
 | API / results | `screens/api/*` | RE-01 guide | Yes — plus API keys settings (gap) |
-| Hero placeholder art | `assets/hero-slotcar.svg` | Redesign placeholder | Replace with tasteful real art when ready |
+| Home hero logo | `img/logo.png` | live site logo | Keep as APEX badge in hero panel |
 
 ## Known gaps (no good still yet)
 
